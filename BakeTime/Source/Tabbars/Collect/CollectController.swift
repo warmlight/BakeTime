@@ -1,5 +1,5 @@
 //
-//  FollowController.swift
+//  CollectController.swift
 //  BakeTime
 //
 //  Created by lyy on 2017/12/4.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FollowController: BaseViewController {
+class CollectController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

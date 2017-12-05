@@ -12,6 +12,13 @@ class RecommendController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let v = UIView()
+        v.backgroundColor = .red
+        v.frame = CGRect.init(x: 100, y: 100, width: 50, height: 50)
+        v.addShadow(opacity: 0.7, offset: CGSize.init(width: 0, height: 5))
+        self.view.addSubview(v)
         // Do any additional setup after loading the view.
     }
 

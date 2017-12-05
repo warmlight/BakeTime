@@ -51,21 +51,21 @@ extension BaseTabBarController {
         let classItem = UITabBarItem(title: "分类",
                                      image: UIImage.icon(fontSize: itemSize, text: IconFontType.Class, imageColor: UIConfig.btGray).withRenderingMode(.alwaysOriginal),
                                      selectedImage:UIImage.icon(fontSize: itemSize, text: IconFontType.ClassFill, imageColor: UIConfig.btBlack).withRenderingMode(.alwaysOriginal))
-        let classNav = BaseNavigationController(rootViewController: RecommendController())
+        let classNav = BaseNavigationController(rootViewController: ClassController())
         classNav.tabBarItem = classItem
         
         //Follow
         let followItem = UITabBarItem(title: "收藏",
-                                      image: UIImage.icon(fontSize: itemSize, text: IconFontType.Follow, imageColor: UIConfig.btGray).withRenderingMode(.alwaysOriginal),
-                                      selectedImage: UIImage.icon(fontSize: itemSize, text: IconFontType.FollowFill, imageColor: UIConfig.btBlack).withRenderingMode(.alwaysOriginal))
-        let followNav = BaseNavigationController(rootViewController: RecommendController())
+                                      image: UIImage.icon(fontSize: itemSize, text: IconFontType.Collect, imageColor: UIConfig.btGray).withRenderingMode(.alwaysOriginal),
+                                      selectedImage: UIImage.icon(fontSize: itemSize, text: IconFontType.CollectFill, imageColor: UIConfig.btBlack).withRenderingMode(.alwaysOriginal))
+        let followNav = BaseNavigationController(rootViewController: CollectController())
         followNav.tabBarItem = followItem
         
         //Mine
         let mineItem = UITabBarItem(title: "我的",
                                     image: UIImage.icon(fontSize: itemSize, text: IconFontType.Mine, imageColor: UIConfig.btGray).withRenderingMode(.alwaysOriginal),
                                     selectedImage: UIImage.icon(fontSize: itemSize, text: IconFontType.MineFill, imageColor: UIConfig.btBlack).withRenderingMode(.alwaysOriginal))
-        let mineNav = BaseNavigationController(rootViewController: RecommendController())
+        let mineNav = BaseNavigationController(rootViewController: MineController())
         mineNav.tabBarItem = mineItem
         
         viewControllers = [recommendNav, classNav, followNav, mineNav]

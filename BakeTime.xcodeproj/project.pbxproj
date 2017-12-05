@@ -23,9 +23,10 @@
 		04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */; };
 		04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */; };
 		04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9F1FD668B60083B9FF /* UIConfig.swift */; };
+		04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */; };
 		04E734B41FD54A9600073253 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B31FD54A9600073253 /* RecommendController.swift */; };
 		04E734B61FD54AA800073253 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B51FD54AA800073253 /* MeController.swift */; };
-		04E734B81FD54AB600073253 /* FollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B71FD54AB600073253 /* FollowController.swift */; };
+		04E734B81FD54AB600073253 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B71FD54AB600073253 /* CollectController.swift */; };
 		04E734BA1FD54AD300073253 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B91FD54AD300073253 /* ClassController.swift */; };
 		2EDE6F4BA4CE7BC81B672A4B /* Pods_BakeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25879BED337578CF178D4B10 /* Pods_BakeTime.framework */; };
 /* End PBXBuildFile section */
@@ -73,11 +74,12 @@
 		04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		04DBAB9F1FD668B60083B9FF /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		04E734AD1FD544BB00073253 /* WRNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
 		04E734B31FD54A9600073253 /* RecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		04E734B51FD54AA800073253 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
-		04E734B71FD54AB600073253 /* FollowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowController.swift; sourceTree = "<group>"; };
+		04E734B71FD54AB600073253 /* CollectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
 		04E734B91FD54AD300073253 /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 		25879BED337578CF178D4B10 /* Pods_BakeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.release.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				04DBAB961FD63A1A0083B9FF /* Iconfont */,
 				0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */,
+				04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */,
 				04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */,
 				04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */,
 				0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */,
@@ -239,7 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				04E734AF1FD54A6700073253 /* Class */,
-				04E734B01FD54A6700073253 /* Follow */,
+				04E734B01FD54A6700073253 /* Collect */,
 				04E734B11FD54A6700073253 /* Mine */,
 				04E734B21FD54A6700073253 /* Recommend */,
 			);
@@ -254,12 +257,12 @@
 			path = Class;
 			sourceTree = "<group>";
 		};
-		04E734B01FD54A6700073253 /* Follow */ = {
+		04E734B01FD54A6700073253 /* Collect */ = {
 			isa = PBXGroup;
 			children = (
-				04E734B71FD54AB600073253 /* FollowController.swift */,
+				04E734B71FD54AB600073253 /* CollectController.swift */,
 			);
-			path = Follow;
+			path = Collect;
 			sourceTree = "<group>";
 		};
 		04E734B11FD54A6700073253 /* Mine */ = {
@@ -489,8 +492,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
-				04E734B81FD54AB600073253 /* FollowController.swift in Sources */,
+				04E734B81FD54AB600073253 /* CollectController.swift in Sources */,
 				04E734BA1FD54AD300073253 /* ClassController.swift in Sources */,
+				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
 				04E734B41FD54A9600073253 /* RecommendController.swift in Sources */,

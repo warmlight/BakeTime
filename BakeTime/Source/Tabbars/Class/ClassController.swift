@@ -12,7 +12,9 @@ class ClassController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = .randomColor
+        
         // Do any additional setup after loading the view.
     }
 
