@@ -7,13 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0445F9DF1FCCFABA004E6920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445F9DE1FCCFABA004E6920 /* AppDelegate.swift */; };
-		0445F9E11FCCFABA004E6920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445F9E01FCCFABA004E6920 /* ViewController.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
 		0445F9F41FCCFABA004E6920 /* BakeTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445F9F31FCCFABA004E6920 /* BakeTimeTests.swift */; };
 		0445F9FF1FCCFABA004E6920 /* BakeTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445F9FE1FCCFABA004E6920 /* BakeTimeUITests.swift */; };
+		0445FA131FCD013B004E6920 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA121FCD013A004E6920 /* ViewController.swift */; };
+		0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA141FCD0144004E6920 /* AppDelegate.swift */; };
+		0445FA191FCD54B8004E6920 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */; };
+		0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */; };
+		0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */; };
+		04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DBAB941FD59EB50083B9FF /* iconfont.ttf */; };
+		04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB971FD63A1A0083B9FF /* IconFont.swift */; };
+		04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */; };
+		04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */; };
+		04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */; };
+		04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9F1FD668B60083B9FF /* UIConfig.swift */; };
+		04E734B41FD54A9600073253 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B31FD54A9600073253 /* RecommendController.swift */; };
+		04E734B61FD54AA800073253 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B51FD54AA800073253 /* MeController.swift */; };
+		04E734B81FD54AB600073253 /* FollowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B71FD54AB600073253 /* FollowController.swift */; };
+		04E734BA1FD54AD300073253 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B91FD54AD300073253 /* ClassController.swift */; };
+		2EDE6F4BA4CE7BC81B672A4B /* Pods_BakeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25879BED337578CF178D4B10 /* Pods_BakeTime.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +49,6 @@
 
 /* Begin PBXFileReference section */
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0445F9DE1FCCFABA004E6920 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0445F9E01FCCFABA004E6920 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0445F9E81FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +59,29 @@
 		0445F9FA1FCCFABA004E6920 /* BakeTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BakeTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9FE1FCCFABA004E6920 /* BakeTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BakeTimeUITests.swift; sourceTree = "<group>"; };
 		0445FA001FCCFABA004E6920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0445FA111FCD013A004E6920 /* BakeTime-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BakeTime-Bridging-Header.h"; sourceTree = "<group>"; };
+		0445FA121FCD013A004E6920 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0445FA141FCD0144004E6920 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+DeviceName.swift"; sourceTree = "<group>"; };
+		0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extension.swift"; sourceTree = "<group>"; };
+		0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		04DBAB941FD59EB50083B9FF /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		04DBAB971FD63A1A0083B9FF /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
+		04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFontEnum.swift; sourceTree = "<group>"; };
+		04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		04DBAB9F1FD668B60083B9FF /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
+		04E734AD1FD544BB00073253 /* WRNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		04E734B31FD54A9600073253 /* RecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
+		04E734B51FD54AA800073253 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		04E734B71FD54AB600073253 /* FollowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowController.swift; sourceTree = "<group>"; };
+		04E734B91FD54AD300073253 /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
+		25879BED337578CF178D4B10 /* Pods_BakeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.release.xcconfig"; sourceTree = "<group>"; };
+		F54F139CC98751F4EAD1288E /* Pods-BakeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDE6F4BA4CE7BC81B672A4B /* Pods_BakeTime.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +117,8 @@
 				0445F9F21FCCFABA004E6920 /* BakeTimeTests */,
 				0445F9FD1FCCFABA004E6920 /* BakeTimeUITests */,
 				0445F9DC1FCCFABA004E6920 /* Products */,
+				C0907563F9F02BAE7F5DDDDA /* Pods */,
+				D57F422EBAC9B4FE92D4866C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +135,12 @@
 		0445F9DD1FCCFABA004E6920 /* BakeTime */ = {
 			isa = PBXGroup;
 			children = (
-				0445F9DE1FCCFABA004E6920 /* AppDelegate.swift */,
-				0445F9E01FCCFABA004E6920 /* ViewController.swift */,
+				0445FA0D1FCD00AE004E6920 /* Framework */,
+				0445FA0E1FCD00AE004E6920 /* Source */,
 				0445F9E21FCCFABA004E6920 /* Main.storyboard */,
 				0445F9E51FCCFABA004E6920 /* Assets.xcassets */,
 				0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */,
+				04DBAB941FD59EB50083B9FF /* iconfont.ttf */,
 				0445F9EA1FCCFABA004E6920 /* Info.plist */,
 			);
 			path = BakeTime;
@@ -125,6 +164,137 @@
 			path = BakeTimeUITests;
 			sourceTree = "<group>";
 		};
+		0445FA0D1FCD00AE004E6920 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		0445FA0E1FCD00AE004E6920 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				04E734AE1FD54A0000073253 /* Tabbars */,
+				0445FA141FCD0144004E6920 /* AppDelegate.swift */,
+				0445FA121FCD013A004E6920 /* ViewController.swift */,
+				0445FA0F1FCD00AE004E6920 /* BaseControllers */,
+				0445FA101FCD00AE004E6920 /* Helpers */,
+				04E734A61FD544A600073253 /* BaseViews */,
+				0445FA111FCD013A004E6920 /* BakeTime-Bridging-Header.h */,
+				04DBAB9F1FD668B60083B9FF /* UIConfig.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		0445FA0F1FCD00AE004E6920 /* BaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */,
+				0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */,
+				0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */,
+			);
+			path = BaseControllers;
+			sourceTree = "<group>";
+		};
+		0445FA101FCD00AE004E6920 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				04DBAB961FD63A1A0083B9FF /* Iconfont */,
+				0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */,
+				04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */,
+				04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */,
+				0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04DBAB961FD63A1A0083B9FF /* Iconfont */ = {
+			isa = PBXGroup;
+			children = (
+				04DBAB971FD63A1A0083B9FF /* IconFont.swift */,
+				04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */,
+			);
+			path = Iconfont;
+			sourceTree = "<group>";
+		};
+		04E734A61FD544A600073253 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				04E734A71FD544BB00073253 /* BaseNavigationBar */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		04E734A71FD544BB00073253 /* BaseNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */,
+				04E734AD1FD544BB00073253 /* WRNavigationBar.swift */,
+			);
+			name = BaseNavigationBar;
+			path = "../../../../../../Downloads/WRNavigationBar_swift-master/WRNavigationBar_swift/WRNavigationBar_swift/BaseNavigationBar";
+			sourceTree = "<group>";
+		};
+		04E734AE1FD54A0000073253 /* Tabbars */ = {
+			isa = PBXGroup;
+			children = (
+				04E734AF1FD54A6700073253 /* Class */,
+				04E734B01FD54A6700073253 /* Follow */,
+				04E734B11FD54A6700073253 /* Mine */,
+				04E734B21FD54A6700073253 /* Recommend */,
+			);
+			path = Tabbars;
+			sourceTree = "<group>";
+		};
+		04E734AF1FD54A6700073253 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				04E734B91FD54AD300073253 /* ClassController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		04E734B01FD54A6700073253 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				04E734B71FD54AB600073253 /* FollowController.swift */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		04E734B11FD54A6700073253 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				04E734B51FD54AA800073253 /* MeController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		04E734B21FD54A6700073253 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				04E734B31FD54A9600073253 /* RecommendController.swift */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		C0907563F9F02BAE7F5DDDDA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F54F139CC98751F4EAD1288E /* Pods-BakeTime.debug.xcconfig */,
+				79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D57F422EBAC9B4FE92D4866C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25879BED337578CF178D4B10 /* Pods_BakeTime.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +302,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0445FA031FCCFABA004E6920 /* Build configuration list for PBXNativeTarget "BakeTime" */;
 			buildPhases = (
+				61CEF1EC82AF78118BAB1B40 /* [CP] Check Pods Manifest.lock */,
 				0445F9D71FCCFABA004E6920 /* Sources */,
 				0445F9D81FCCFABA004E6920 /* Frameworks */,
 				0445F9D91FCCFABA004E6920 /* Resources */,
+				BD1239D4FEF316A307159E23 /* [CP] Embed Pods Frameworks */,
+				30766692F162972700EB6A96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,7 +366,8 @@
 				TargetAttributes = {
 					0445F9DA1FCCFABA004E6920 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
 					};
 					0445F9EE1FCCFABA004E6920 = {
 						CreatedOnToolsVersion = 9.0;
@@ -232,6 +406,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
 				0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
@@ -254,13 +429,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30766692F162972700EB6A96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61CEF1EC82AF78118BAB1B40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BakeTime-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD1239D4FEF316A307159E23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0445F9D71FCCFABA004E6920 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0445F9E11FCCFABA004E6920 /* ViewController.swift in Sources */,
-				0445F9DF1FCCFABA004E6920 /* AppDelegate.swift in Sources */,
+				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
+				04E734B81FD54AB600073253 /* FollowController.swift in Sources */,
+				04E734BA1FD54AD300073253 /* ClassController.swift in Sources */,
+				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
+				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
+				04E734B41FD54A9600073253 /* RecommendController.swift in Sources */,
+				0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */,
+				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
+				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
+				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,
+				0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */,
+				04E734B61FD54AA800073253 /* MeController.swift in Sources */,
+				0445FA131FCD013B004E6920 /* ViewController.swift in Sources */,
+				0445FA191FCD54B8004E6920 /* BaseNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,29 +665,43 @@
 		};
 		0445FA041FCCFABA004E6920 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54F139CC98751F4EAD1288E /* Pods-BakeTime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 39LNNG9D24;
 				INFOPLIST_FILE = BakeTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lyy.BakeTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanaitong.Guanaitong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "433a6eb6-1188-48a7-b219-da3a33a2599f";
+				PROVISIONING_PROFILE_SPECIFIER = "Development com.guanaitong.Guanaitong";
+				SWIFT_OBJC_BRIDGING_HEADER = "BakeTime/Source/BakeTime-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		0445FA051FCCFABA004E6920 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BakeTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lyy.BakeTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.guanaitong.Guanaitong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BakeTime/Source/BakeTime-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
