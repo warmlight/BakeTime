@@ -25,7 +25,6 @@ extension UILabel {
 }
 
 extension UIImage {
-    
     static func icon(fontSize: CGFloat, text: IconFontType, imageColor: UIColor = UIColor.black) -> UIImage {
         let size = CGSize(width: fontSize, height: fontSize)
         return self.icon(imageSize: size, text: text, imageColor: imageColor)

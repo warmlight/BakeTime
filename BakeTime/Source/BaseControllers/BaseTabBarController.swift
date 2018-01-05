@@ -20,8 +20,9 @@ class BaseTabBarController: UITabBarController {
         let items = UITabBarItem.appearance()
 
         var normalAttr: [NSAttributedStringKey: Any] = [:]
-        normalAttr[NSAttributedStringKey.font] = UIFont.systemFont(ofSize: 11)
         normalAttr[NSAttributedStringKey.foregroundColor] = UIConfig.btGray
+        normalAttr[NSAttributedStringKey.font] = UIFont.systemFont(ofSize: 11)
+       
         var selecAttr: [NSAttributedStringKey: Any] = [:]
         selecAttr[NSAttributedStringKey.foregroundColor] = UIConfig.btBlack
 
