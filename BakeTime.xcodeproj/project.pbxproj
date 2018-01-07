@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041C35DB1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35DA1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift */; };
+		041C35DD200278F30059CF77 /* PublicMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35DC200278F30059CF77 /* PublicMacros.swift */; };
+		041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */; };
+		041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -57,6 +61,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		041C35DA1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		041C35DC200278F30059CF77 /* PublicMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMacros.swift; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -131,9 +137,19 @@
 		04081DC21FF7FD6C006D3298 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				041C35D91FFF7DE30059CF77 /* CollectionViewFlowLayout */,
 				04B4C6C61FFA82C5006CEA4A /* PullToRefresh */,
+				041C35DC200278F30059CF77 /* PublicMacros.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		041C35D91FFF7DE30059CF77 /* CollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				041C35DA1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift */,
+			);
+			path = CollectionViewFlowLayout;
 			sourceTree = "<group>";
 		};
 		0445F9D21FCCFABA004E6920 = {
@@ -533,6 +549,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
+				041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */,
 				04B4C6D51FFA8303006CEA4A /* WriteRefreshView.swift in Sources */,
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
 				04E734B81FD54AB600073253 /* CollectController.swift in Sources */,
@@ -548,6 +566,8 @@
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
 				04B4C6D41FFA8303006CEA4A /* UIScrollView+PullToRefresh.swift in Sources */,
+				041C35DD200278F30059CF77 /* PublicMacros.swift in Sources */,
+				041C35DB1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,
 				0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */,
 				04B4C6D21FFA8303006CEA4A /* RefreshViewAnimator.swift in Sources */,
