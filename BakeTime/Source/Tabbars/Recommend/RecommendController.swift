@@ -54,6 +54,7 @@ extension RecommendController {
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
         
+        layout.minimumLineSpacing = 20
         layout.itemSize = CGSize(width: screenW, height: 100)
 
         self.view.addSubview(collectionView!)
@@ -83,5 +84,17 @@ extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .black
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        cell.transform = CGAffineTransform.init(translationX: 0, y: 50)
+        UIView.animate(withDuration: 1) {
+            cell.transform = CGAffineTransform.identity
+        }
+//        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
+//        //x和y的最终值为1
+//        UIView.animate(withDuration: 1) {
+//            cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
+//        }
     }
 }
