@@ -11,10 +11,10 @@ import UIKit
 class BaseTabBarController: UITabBarController {
     
     fileprivate let itemSize: CGFloat = 18.0
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tabBar.isTranslucent = false
         setupSubControllers()
 
         let items = UITabBarItem.appearance()
@@ -22,7 +22,7 @@ class BaseTabBarController: UITabBarController {
         var normalAttr: [NSAttributedStringKey: Any] = [:]
         normalAttr[NSAttributedStringKey.foregroundColor] = UIConfig.btGray
         normalAttr[NSAttributedStringKey.font] = UIFont.systemFont(ofSize: 11)
-       
+
         var selecAttr: [NSAttributedStringKey: Any] = [:]
         selecAttr[NSAttributedStringKey.foregroundColor] = UIConfig.btBlack
 
@@ -70,6 +70,5 @@ extension BaseTabBarController {
         mineNav.tabBarItem = mineItem
         
         viewControllers = [recommendNav, classNav, followNav, mineNav]
-        tabBar.isTranslucent = false
     }
 }

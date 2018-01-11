@@ -42,22 +42,38 @@ extension RecommendController {
             make.left.right.equalTo(view)
             make.top.equalTo(topLayoutGuide.snp.bottom)
             make.bottom.equalTo(bottomLayoutGuide.snp.top)
+            if #available(iOS 11.0, *) {
+                make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+                make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
+            } else {
+                make.top.equalTo(topLayoutGuide.snp.bottom)
+                make.bottom.equalTo(bottomLayoutGuide.snp.top)
+            }
         }
     }
     
     private func setupCollectionView() {
         let layout = SpringCollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.itemSize = CGSize(width: screenW, height: 225)
+        if #available(iOS 11.0, *) {
+            layout.sectionInsetReference = .fromSafeArea
+        } else {
+            // Fallback on earlier versions
+        }
+        
+        if #available(iOS 11.0, *) {
+            collectionView?.contentInsetAdjustmentBehavior = .never
+        }
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"cell")
         collectionView?.delegate = self;
         collectionView?.dataSource = self;
         collectionView?.backgroundColor = .white
         collectionView?.alwaysBounceVertical = true
         
-        layout.minimumLineSpacing = 20
-        layout.itemSize = CGSize(width: screenW, height: 100)
+        collectionView?.register(UINib(nibName:String(describing: RecommendCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: RecommendCell.self))
 
-        self.view.addSubview(collectionView!)
+        view.addSubview(collectionView!)
         
         // Refresh control
         let animateView = WriteRefreshView()
@@ -71,30 +87,21 @@ extension RecommendController {
 
 extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        
-        return 1
+        return 2
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 50
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: RecommendCell.self), for: indexPath) as! RecommendCell
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        cell.transform = CGAffineTransform.init(translationX: 0, y: 50)
-        UIView.animate(withDuration: 1) {
-            cell.transform = CGAffineTransform.identity
-        }
-//        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1);
-//        //x和y的最终值为1
-//        UIView.animate(withDuration: 1) {
-//            cell.layer.transform = CATransform3DMakeScale(1, 1, 1);
-//        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = collectionView.frame.width - collectionView.frame.width.truncatingRemainder(dividingBy: 2)
+        return CGSize(width: cellWidth, height: 225)
     }
 }

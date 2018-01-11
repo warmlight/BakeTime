@@ -11,6 +11,14 @@
 		041C35DD200278F30059CF77 /* PublicMacros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35DC200278F30059CF77 /* PublicMacros.swift */; };
 		041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */; };
 		041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */; };
+		041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */; };
+		041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734AD1FD544BB00073253 /* WRNavigationBar.swift */; };
+		041C35F32005BEFC0059CF77 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35ED2005BEFB0059CF77 /* CollectController.swift */; };
+		041C35F42005BEFC0059CF77 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35EF2005BEFB0059CF77 /* MeController.swift */; };
+		041C35F52005BEFC0059CF77 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F12005BEFC0059CF77 /* ClassController.swift */; };
+		041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F82005BF350059CF77 /* RecommendController.swift */; };
+		041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35FD2005BF7F0059CF77 /* RecommendCell.swift */; };
+		041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041C35FE2005BF7F0059CF77 /* RecommendCell.xib */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -36,10 +44,6 @@
 		04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */; };
 		04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9F1FD668B60083B9FF /* UIConfig.swift */; };
 		04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */; };
-		04E734B41FD54A9600073253 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B31FD54A9600073253 /* RecommendController.swift */; };
-		04E734B61FD54AA800073253 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B51FD54AA800073253 /* MeController.swift */; };
-		04E734B81FD54AB600073253 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B71FD54AB600073253 /* CollectController.swift */; };
-		04E734BA1FD54AD300073253 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734B91FD54AD300073253 /* ClassController.swift */; };
 		2EDE6F4BA4CE7BC81B672A4B /* Pods_BakeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25879BED337578CF178D4B10 /* Pods_BakeTime.framework */; };
 		D8076B0020052007009C1075 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8076AFF20052006009C1075 /* BubbleTransition.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +68,12 @@
 /* Begin PBXFileReference section */
 		041C35DA1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		041C35DC200278F30059CF77 /* PublicMacros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMacros.swift; sourceTree = "<group>"; };
+		041C35ED2005BEFB0059CF77 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
+		041C35EF2005BEFB0059CF77 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		041C35F12005BEFC0059CF77 /* ClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
+		041C35F82005BF350059CF77 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
+		041C35FD2005BF7F0059CF77 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		041C35FE2005BF7F0059CF77 /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,10 +110,6 @@
 		04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		04E734AD1FD544BB00073253 /* WRNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
-		04E734B31FD54A9600073253 /* RecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
-		04E734B51FD54AA800073253 /* MeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
-		04E734B71FD54AB600073253 /* CollectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
-		04E734B91FD54AD300073253 /* ClassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 		25879BED337578CF178D4B10 /* Pods_BakeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.release.xcconfig"; sourceTree = "<group>"; };
 		D8076AFF20052006009C1075 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTransition.swift; sourceTree = "<group>"; };
@@ -153,6 +159,64 @@
 				041C35DA1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift */,
 			);
 			path = CollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		041C35EA2005BEFB0059CF77 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				041C35F72005BF350059CF77 /* Controller */,
+				041C35F92005BF350059CF77 /* Model */,
+				041C35F62005BF350059CF77 /* View */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		041C35EC2005BEFB0059CF77 /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				041C35ED2005BEFB0059CF77 /* CollectController.swift */,
+			);
+			path = Collect;
+			sourceTree = "<group>";
+		};
+		041C35EE2005BEFB0059CF77 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				041C35EF2005BEFB0059CF77 /* MeController.swift */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		041C35F02005BEFC0059CF77 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				041C35F12005BEFC0059CF77 /* ClassController.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		041C35F62005BF350059CF77 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041C35FD2005BF7F0059CF77 /* RecommendCell.swift */,
+				041C35FE2005BF7F0059CF77 /* RecommendCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041C35F72005BF350059CF77 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041C35F82005BF350059CF77 /* RecommendController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		041C35F92005BF350059CF77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0445F9D21FCCFABA004E6920 = {
@@ -219,8 +283,11 @@
 		0445FA0E1FCD00AE004E6920 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				041C35F02005BEFC0059CF77 /* Class */,
+				041C35EC2005BEFB0059CF77 /* Collect */,
+				041C35EE2005BEFB0059CF77 /* Mine */,
+				041C35EA2005BEFB0059CF77 /* Recommend */,
 				04081DC21FF7FD6C006D3298 /* Tools */,
-				04E734AE1FD54A0000073253 /* Tabbars */,
 				0445FA141FCD0144004E6920 /* AppDelegate.swift */,
 				0445FA121FCD013A004E6920 /* ViewController.swift */,
 				0445FA0F1FCD00AE004E6920 /* BaseControllers */,
@@ -295,49 +362,6 @@
 			);
 			name = BaseNavigationBar;
 			path = "../../../../../../Downloads/WRNavigationBar_swift-master/WRNavigationBar_swift/WRNavigationBar_swift/BaseNavigationBar";
-			sourceTree = "<group>";
-		};
-		04E734AE1FD54A0000073253 /* Tabbars */ = {
-			isa = PBXGroup;
-			children = (
-				04E734AF1FD54A6700073253 /* Class */,
-				04E734B01FD54A6700073253 /* Collect */,
-				04E734B11FD54A6700073253 /* Mine */,
-				04E734B21FD54A6700073253 /* Recommend */,
-			);
-			path = Tabbars;
-			sourceTree = "<group>";
-		};
-		04E734AF1FD54A6700073253 /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				04E734B91FD54AD300073253 /* ClassController.swift */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		04E734B01FD54A6700073253 /* Collect */ = {
-			isa = PBXGroup;
-			children = (
-				04E734B71FD54AB600073253 /* CollectController.swift */,
-			);
-			path = Collect;
-			sourceTree = "<group>";
-		};
-		04E734B11FD54A6700073253 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				04E734B51FD54AA800073253 /* MeController.swift */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		04E734B21FD54A6700073253 /* Recommend */ = {
-			isa = PBXGroup;
-			children = (
-				04E734B31FD54A9600073253 /* RecommendController.swift */,
-			);
-			path = Recommend;
 			sourceTree = "<group>";
 		};
 		C0907563F9F02BAE7F5DDDDA /* Pods */ = {
@@ -469,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
+				041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */,
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
 				0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
@@ -552,30 +577,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041C35F32005BEFC0059CF77 /* CollectController.swift in Sources */,
+				041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */,
+				041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */,
 				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
 				041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */,
+				041C35F42005BEFC0059CF77 /* MeController.swift in Sources */,
 				04B4C6D51FFA8303006CEA4A /* WriteRefreshView.swift in Sources */,
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
 				D8076B0020052007009C1075 /* BubbleTransition.swift in Sources */,
-				04E734B81FD54AB600073253 /* CollectController.swift in Sources */,
-				04E734BA1FD54AD300073253 /* ClassController.swift in Sources */,
 				04B4C6D31FFA8303006CEA4A /* State.swift in Sources */,
 				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
-				04E734B41FD54A9600073253 /* RecommendController.swift in Sources */,
 				04B4C6D61FFA8303006CEA4A /* DefaultViewAnimator.swift in Sources */,
 				04B4C6D01FFA8303006CEA4A /* DefaultRefreshView.swift in Sources */,
+				041C35F52005BEFC0059CF77 /* ClassController.swift in Sources */,
 				0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */,
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
+				041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */,
 				04B4C6D41FFA8303006CEA4A /* UIScrollView+PullToRefresh.swift in Sources */,
 				041C35DD200278F30059CF77 /* PublicMacros.swift in Sources */,
 				041C35DB1FFF7E120059CF77 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,
 				0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */,
+				041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */,
 				04B4C6D21FFA8303006CEA4A /* RefreshViewAnimator.swift in Sources */,
-				04E734B61FD54AA800073253 /* MeController.swift in Sources */,
 				04B4C6CF1FFA8303006CEA4A /* PullToRefresh.swift in Sources */,
 				0445FA131FCD013B004E6920 /* ViewController.swift in Sources */,
 				04B4C6D11FFA8303006CEA4A /* WriteAnimatior.swift in Sources */,

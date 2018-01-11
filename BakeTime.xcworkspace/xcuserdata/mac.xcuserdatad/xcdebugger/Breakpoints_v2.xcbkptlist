@@ -21,53 +21,5 @@
             continueAfterRunningActions = "No">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BakeTime/Source/Tools/CollectionViewFlowLayout/SpringCollectionViewFlowLayout.swift"
-            timestampString = "537034420.29765"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "prepare()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "BakeTime.SpringCollectionViewFlowLayout.prepare() -&gt; ()"
-                  moduleName = "BakeTime"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/11/BakeTime/BakeTime/Source/Tools/CollectionViewFlowLayout/SpringCollectionViewFlowLayout.swift"
-                  timestampString = "537031652.623234"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "1363">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "implicit closure #3 : @autoclosure () throws -&gt; Swift.Array&lt;__ObjC.UICollectionViewLayoutAttributes&gt; in BakeTime.SpringCollectionViewFlowLayout.prepare() -&gt; ()"
-                  moduleName = "BakeTime"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/11/BakeTime/BakeTime/Source/Tools/CollectionViewFlowLayout/SpringCollectionViewFlowLayout.swift"
-                  timestampString = "537031652.625615"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "4">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

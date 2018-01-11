@@ -15,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//
+
 //        let recommendNav = UINavigationController.init(rootViewController: RecommendController())
-        
+//        window?.rootViewController = recommendNav
+//        window?.makeKeyAndVisible()
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         window?.rootViewController = BaseTabBarController()
-//        window?.rootViewController = recommendNav
         window?.makeKeyAndVisible()
         return true
     }
