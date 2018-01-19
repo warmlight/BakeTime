@@ -29,11 +29,16 @@ class RecommendCell: UICollectionViewCell {
 extension RecommendCell {
     private func setupUI() {
         setupTitleView()
+        setupCoverImage()
     }
     
     private func setupTitleView() {
         titleView.clipsToBounds = true
         titleView.layer.cornerRadius = 4
         titleView.layer.masksToBounds = false
+    }
+    
+    private func setupCoverImage() {
+        coverImage.layer.cornerRadius = 8
     }
 }

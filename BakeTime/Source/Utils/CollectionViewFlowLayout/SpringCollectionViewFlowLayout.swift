@@ -78,7 +78,7 @@ class SpringCollectionViewFlowLayout: UICollectionViewFlowLayout {
         for springBehaviour in attachmentBehavior {
             let yDistanceFromTouch: CGFloat = fabs(touchLocation.y - springBehaviour.anchorPoint.y)
             let xDistanceFromTouch: CGFloat = fabs(touchLocation.x - springBehaviour.anchorPoint.x)
-            let scrollResistance = (yDistanceFromTouch + xDistanceFromTouch) / 1500.0
+            let scrollResistance = (yDistanceFromTouch + xDistanceFromTouch) / 2000.0
             let item = springBehaviour.items.first!
             var center = item.center;
 

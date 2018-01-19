@@ -72,6 +72,7 @@ extension RecommendController {
         collectionView?.alwaysBounceVertical = true
         
         collectionView?.register(UINib(nibName:String(describing: RecommendCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: RecommendCell.self))
+        collectionView?.register(RecommendBannerCell.self, forCellWithReuseIdentifier: String(describing: RecommendBannerCell.self))
 
         view.addSubview(collectionView!)
         
@@ -86,15 +87,22 @@ extension RecommendController {
 }
 
 extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
+        }
         return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if indexPath.section == 0 {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: RecommendBannerCell.self), for: indexPath)
+            return cell
+        }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: RecommendCell.self), for: indexPath) as! RecommendCell
         return cell
@@ -102,6 +110,6 @@ extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.width - collectionView.frame.width.truncatingRemainder(dividingBy: 2)
-        return CGSize(width: cellWidth, height: 225)
+        return CGSize(width: cellWidth, height: 235)
     }
 }
