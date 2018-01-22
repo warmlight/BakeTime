@@ -26,13 +26,15 @@
 		041085A120107CC5002B2F02 /* CarouselEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410859A20107C4B002B2F02 /* CarouselEngine.swift */; };
 		041085A320107E7D002B2F02 /* StickyPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085A220107E7D002B2F02 /* StickyPageControl.swift */; };
 		041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085A72011F01A002B2F02 /* RecommendBannerCell.swift */; };
+		041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */; };
+		041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085EB2014E3C5002B2F02 /* ClassController.swift */; };
+		041085EF2014E402002B2F02 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085EE2014E402002B2F02 /* ClassCell.swift */; };
 		041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */; };
 		041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */; };
 		041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */; };
 		041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734AD1FD544BB00073253 /* WRNavigationBar.swift */; };
 		041C35F32005BEFC0059CF77 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35ED2005BEFB0059CF77 /* CollectController.swift */; };
 		041C35F42005BEFC0059CF77 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35EF2005BEFB0059CF77 /* MeController.swift */; };
-		041C35F52005BEFC0059CF77 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F12005BEFC0059CF77 /* ClassController.swift */; };
 		041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F82005BF350059CF77 /* RecommendController.swift */; };
 		041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35FD2005BF7F0059CF77 /* RecommendCell.swift */; };
 		041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041C35FE2005BF7F0059CF77 /* RecommendCell.xib */; };
@@ -93,9 +95,11 @@
 		0410859C20107C6F002B2F02 /* CarsouelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsouelCell.xib; sourceTree = "<group>"; };
 		041085A220107E7D002B2F02 /* StickyPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyPageControl.swift; sourceTree = "<group>"; };
 		041085A72011F01A002B2F02 /* RecommendBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBannerCell.swift; sourceTree = "<group>"; };
+		041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		041085EB2014E3C5002B2F02 /* ClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
+		041085EE2014E402002B2F02 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
 		041C35ED2005BEFB0059CF77 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
 		041C35EF2005BEFB0059CF77 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
-		041C35F12005BEFC0059CF77 /* ClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
 		041C35F82005BF350059CF77 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		041C35FD2005BF7F0059CF77 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		041C35FE2005BF7F0059CF77 /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
@@ -207,6 +211,29 @@
 			path = CarouselView;
 			sourceTree = "<group>";
 		};
+		041085E92014E3C5002B2F02 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				041085EE2014E402002B2F02 /* ClassCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		041085EA2014E3C5002B2F02 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				041085EB2014E3C5002B2F02 /* ClassController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		041085EC2014E3C5002B2F02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		041C35EA2005BEFB0059CF77 /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,7 +263,9 @@
 		041C35F02005BEFC0059CF77 /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				041C35F12005BEFC0059CF77 /* ClassController.swift */,
+				041085EA2014E3C5002B2F02 /* Controller */,
+				041085EC2014E3C5002B2F02 /* Model */,
+				041085E92014E3C5002B2F02 /* View */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -365,6 +394,7 @@
 				04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */,
 				04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */,
 				0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */,
+				041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -625,7 +655,6 @@
 				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
-				041C35F52005BEFC0059CF77 /* ClassController.swift in Sources */,
 				0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */,
 				0410859120107AE4002B2F02 /* PullToRefresh.swift in Sources */,
 				0410859020107AE4002B2F02 /* DefaultViewAnimator.swift in Sources */,
@@ -633,10 +662,13 @@
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				0410859220107AE4002B2F02 /* RefreshViewAnimator.swift in Sources */,
 				0410859420107AE4002B2F02 /* UIScrollView+PullToRefresh.swift in Sources */,
+				041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */,
 				041085A320107E7D002B2F02 /* StickyPageControl.swift in Sources */,
+				041085EF2014E402002B2F02 /* ClassCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
 				0410858D20107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift in Sources */,
+				041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */,
 				041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */,
 				041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */,
 				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,

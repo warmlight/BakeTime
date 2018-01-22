@@ -14,12 +14,7 @@ protocol CarouselData {
     var linkUrl: String {get set}
 }
 
-protocol CarouselViewDelegate {
-    func didSelectedData(_ data: CarouselData)
-}
-
 class CarouselView: UIView {
-    var delegate: CarouselViewDelegate?
     private var carouselView: CarouselEngine
     private let pageControl = StickyPageControl()
     var carouselData: [CarouselData] = [] {
@@ -100,8 +95,6 @@ extension CarouselView: CarouselEngineDelegate {
     }
     
     func banner(_ banner: CarouselEngine, didSelectedWithIndex: Int, data: CarouselData) {
-        if let d = delegate {
-            d.didSelectedData(data)
-        }
+
     }
 }

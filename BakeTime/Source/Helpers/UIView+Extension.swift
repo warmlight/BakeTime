@@ -112,4 +112,8 @@ extension UIView {
         self.layer.shadowOpacity = opacity
         self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
     }
+    
+    func push(_ viewController: UIViewController, animated: Bool) {
+        UIViewController.top?.navigationController?.pushViewController(viewController, animated: animated)
+    }
 }
