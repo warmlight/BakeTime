@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BradleyHand-Bold.ttf">
+            <string>BradleyHandITCTT-Bold</string>
+        </array>
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ClassCoverCell" id="gTV-IL-0wX" customClass="ClassCoverCell" customModule="BakeTime" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="427" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="427" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test2" translatesAutoresizingMaskIntoConstraints="NO" id="4UD-rj-CXX">
+                        <rect key="frame" x="0.0" y="0.0" width="507" height="329"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4E-Nx-X0j">
+                        <rect key="frame" x="70" y="30" width="287" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Z-E1-tng">
+                                <rect key="frame" x="50" y="74.5" width="187" height="1"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Tu2-iI-zw3"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uy0-4c-6Ec">
+                                <rect key="frame" x="122.5" y="75.5" width="43" height="25"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="20"/>
+                                <color key="textColor" red="0.20392156859999999" green="0.20000000000000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q9Z-E1-tng" firstAttribute="leading" secondItem="C4E-Nx-X0j" secondAttribute="leading" constant="50" id="2Wn-Y7-FOK"/>
+                            <constraint firstItem="Q9Z-E1-tng" firstAttribute="centerY" secondItem="C4E-Nx-X0j" secondAttribute="centerY" id="6oQ-fJ-7dg"/>
+                            <constraint firstItem="Q9Z-E1-tng" firstAttribute="centerX" secondItem="Uy0-4c-6Ec" secondAttribute="centerX" id="LId-7s-6vm"/>
+                            <constraint firstItem="Uy0-4c-6Ec" firstAttribute="top" secondItem="Q9Z-E1-tng" secondAttribute="bottom" id="j3N-wv-CTE"/>
+                            <constraint firstItem="Uy0-4c-6Ec" firstAttribute="centerX" secondItem="C4E-Nx-X0j" secondAttribute="centerX" id="nXN-70-Dcv"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蛋糕" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bT-iy-Uj9">
+                        <rect key="frame" x="189" y="70.5" width="48" height="34"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="24"/>
+                        <color key="textColor" red="0.20392156859999999" green="0.20000000000000001" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="C4E-Nx-X0j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="70" id="7UI-lF-ZfA"/>
+                <constraint firstItem="C4E-Nx-X0j" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Er9-fP-mfc"/>
+                <constraint firstAttribute="bottom" secondItem="C4E-Nx-X0j" secondAttribute="bottom" constant="30" id="JPo-se-fuh"/>
+                <constraint firstItem="C4E-Nx-X0j" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="T1P-U4-TOA"/>
+                <constraint firstAttribute="trailing" secondItem="C4E-Nx-X0j" secondAttribute="trailing" constant="70" id="cDQ-xb-qqd"/>
+                <constraint firstItem="9bT-iy-Uj9" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ePS-gn-IoX"/>
+                <constraint firstItem="Q9Z-E1-tng" firstAttribute="top" secondItem="9bT-iy-Uj9" secondAttribute="bottom" id="pxR-BJ-nHT"/>
+                <constraint firstItem="C4E-Nx-X0j" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="tLB-G3-mE7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="427" height="210"/>
+            <connections>
+                <outlet property="chineseTitleLabel" destination="9bT-iy-Uj9" id="Fms-2O-pbE"/>
+                <outlet property="englishTitleLabel" destination="Uy0-4c-6Ec" id="kO8-Dq-sZ8"/>
+                <outlet property="imageView" destination="4UD-rj-CXX" id="GWj-b0-Ape"/>
+                <outlet property="titleBgView" destination="C4E-Nx-X0j" id="gYa-fU-Nb2"/>
+            </connections>
+            <point key="canvasLocation" x="-111.5" y="-132"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="test2" width="750" height="750"/>
+    </resources>
+</document>

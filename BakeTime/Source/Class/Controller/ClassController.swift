@@ -20,13 +20,9 @@ class ClassController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        scrollViewDidScroll(collectionView!)
-//    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        //cell的图片offset显示不准确 reload后可正确显示
         self.collectionView?.reloadData()
     }
     
@@ -35,7 +31,6 @@ class ClassController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
-
 
 // MARK: Setup UI
 
@@ -60,15 +55,16 @@ extension ClassController {
     
     private func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: view.frame.width, height: 150)
+        layout.minimumLineSpacing = 3
+        layout.itemSize = CGSize(width: view.frame.width, height: 140)
 
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView?.bounces = false
         collectionView?.delegate = self;
         collectionView?.dataSource = self;
         collectionView?.backgroundColor = .white
-        collectionView?.register(ClassCell.self, forCellWithReuseIdentifier:String(describing: ClassCell.self))
-        
+        collectionView?.register(UINib(nibName:String(describing: ClassCoverCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: ClassCoverCell.self))
+
         self.view.addSubview(collectionView!)
     }
 }
@@ -84,23 +80,45 @@ extension ClassController: UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let parallaxCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ClassCell.self), for: indexPath) as! ClassCell
+        let parallaxCell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: ClassCoverCell.self), for: indexPath) as! ClassCoverCell
         parallaxCell.backgroundColor = .white
-        let yOffset = ((collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight) * 150
+        let yOffset = ((collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight) * yOffsetSpeed
         parallaxCell.offset(CGPoint(x: 0, y :yOffset))
+        mockData(indexPath: indexPath, cell: parallaxCell)
         return parallaxCell
+    }
+    
+    func mockData(indexPath: IndexPath, cell: ClassCoverCell) {
+        switch indexPath.row {
+        case 0:
+            cell.imageView.image = #imageLiteral(resourceName: "pie")
+            cell.chineseTitleLabel.text = "派"
+            cell.englishTitleLabel.text = "Pie"
+        case 1:
+            cell.imageView.image = #imageLiteral(resourceName: "cake")
+            cell.chineseTitleLabel.text = "蛋糕"
+            cell.englishTitleLabel.text = "Cake"
+        case 2:
+            cell.imageView.image = #imageLiteral(resourceName: "bread")
+            cell.chineseTitleLabel.text = "面包"
+            cell.englishTitleLabel.text = "Bread"
+        case 3:
+            cell.imageView.image = #imageLiteral(resourceName: "cookie")
+            cell.chineseTitleLabel.text = "饼干"
+            cell.englishTitleLabel.text = "Cookie"
+        default:
+            break
+        }
     }
 }
 
 extension ClassController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard let collectionView = self.collectionView else {return}
-        guard let visibleCells = collectionView.visibleCells as? [ClassCell] else {return}
+        guard let visibleCells = collectionView.visibleCells as? [ClassCoverCell] else {return}
         for parallaxCell in visibleCells {
-            let yOffset = ((collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight) * 150
-            let xOffset = ((collectionView.contentOffset.x - parallaxCell.frame.origin.x) / parallaxCell.imageWidth) * 100
-
-            parallaxCell.offset(CGPoint(x: xOffset,y :yOffset))
+            let yOffset = ((collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight) * yOffsetSpeed
+            parallaxCell.offset(CGPoint(x: 0,y :yOffset))
         }
     }
 }

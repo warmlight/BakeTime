@@ -39,11 +39,15 @@ extension RecommendBannerCell {
     
     private func bindingSubviewsLayout() {
         carouselView.snp.makeConstraints { (make) in
-            make.edges.equalTo(contentView)
+            make.top.bottom.equalTo(self)
+            make.left.equalTo(self).offset(15)
+            make.right.equalTo(self).offset(-15)
         }
     }
     
     private func setupCarouselView() {
+        carouselView.layer.cornerRadius = 8
+        carouselView.layer.masksToBounds = true
         contentView.addSubview(carouselView)
     }
 }

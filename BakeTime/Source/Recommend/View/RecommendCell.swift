@@ -20,8 +20,8 @@ class RecommendCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        coverBgView.addShadow(opacity: 0.3, offset: CGSize.init(width: 0, height: 10))
-        titleView.addShadow(opacity: 0.3, radius: 4, offset: CGSize.init(width: 0, height: 5))
+        coverBgView.addShadow(opacity: 0.4, offset: CGSize.init(width: 0, height: 10))
+        titleView.addShadow(opacity: 0.4, radius: 4, offset: CGSize.init(width: 0, height: 5))
     }
 }
 
@@ -34,11 +34,11 @@ extension RecommendCell {
     
     private func setupTitleView() {
         titleView.clipsToBounds = true
-        titleView.layer.cornerRadius = 4
+        titleView.layer.cornerRadius = 0
         titleView.layer.masksToBounds = false
     }
     
     private func setupCoverImage() {
-        coverImage.layer.cornerRadius = 8
+        coverImage.layer.cornerRadius = 4
     }
 }

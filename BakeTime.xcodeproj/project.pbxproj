@@ -28,12 +28,10 @@
 		041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085A72011F01A002B2F02 /* RecommendBannerCell.swift */; };
 		041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */; };
 		041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085EB2014E3C5002B2F02 /* ClassController.swift */; };
-		041085EF2014E402002B2F02 /* ClassCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041085EE2014E402002B2F02 /* ClassCell.swift */; };
 		041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA171FCD038F004E6920 /* Dictionary+Extension.swift */; };
 		041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */; };
 		041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */; };
 		041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734AD1FD544BB00073253 /* WRNavigationBar.swift */; };
-		041C35F32005BEFC0059CF77 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35ED2005BEFB0059CF77 /* CollectController.swift */; };
 		041C35F42005BEFC0059CF77 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35EF2005BEFB0059CF77 /* MeController.swift */; };
 		041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F82005BF350059CF77 /* RecommendController.swift */; };
 		041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35FD2005BF7F0059CF77 /* RecommendCell.swift */; };
@@ -48,6 +46,13 @@
 		0445FA191FCD54B8004E6920 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */; };
 		0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */; };
 		0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */; };
+		04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */; };
+		04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */; };
+		04D39B94201720A200733232 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B93201720A200733232 /* CollectController.swift */; };
+		04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */; };
+		04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */; };
+		04D39B9B201720F100733232 /* CollectTimeLineRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B99201720F100733232 /* CollectTimeLineRightCell.swift */; };
+		04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D39B9A201720F100733232 /* CollectTimeLineRightCell.xib */; };
 		04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DBAB941FD59EB50083B9FF /* iconfont.ttf */; };
 		04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB971FD63A1A0083B9FF /* IconFont.swift */; };
 		04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */; };
@@ -97,8 +102,6 @@
 		041085A72011F01A002B2F02 /* RecommendBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBannerCell.swift; sourceTree = "<group>"; };
 		041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		041085EB2014E3C5002B2F02 /* ClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
-		041085EE2014E402002B2F02 /* ClassCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCell.swift; sourceTree = "<group>"; };
-		041C35ED2005BEFB0059CF77 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
 		041C35EF2005BEFB0059CF77 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		041C35F82005BF350059CF77 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		041C35FD2005BF7F0059CF77 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
@@ -122,6 +125,13 @@
 		0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCoverCell.swift; sourceTree = "<group>"; };
+		04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCoverCell.xib; sourceTree = "<group>"; };
+		04D39B93201720A200733232 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
+		04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTimeLineLeftCell.swift; sourceTree = "<group>"; };
+		04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTimeLineLeftCell.xib; sourceTree = "<group>"; };
+		04D39B99201720F100733232 /* CollectTimeLineRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTimeLineRightCell.swift; sourceTree = "<group>"; };
+		04D39B9A201720F100733232 /* CollectTimeLineRightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTimeLineRightCell.xib; sourceTree = "<group>"; };
 		04DBAB941FD59EB50083B9FF /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		04DBAB971FD63A1A0083B9FF /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFontEnum.swift; sourceTree = "<group>"; };
@@ -214,7 +224,8 @@
 		041085E92014E3C5002B2F02 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				041085EE2014E402002B2F02 /* ClassCell.swift */,
+				04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */,
+				04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,7 +258,9 @@
 		041C35EC2005BEFB0059CF77 /* Collect */ = {
 			isa = PBXGroup;
 			children = (
-				041C35ED2005BEFB0059CF77 /* CollectController.swift */,
+				04D39B902017209100733232 /* Controller */,
+				04D39B912017209100733232 /* Model */,
+				04D39B922017209100733232 /* View */,
 			);
 			path = Collect;
 			sourceTree = "<group>";
@@ -397,6 +410,32 @@
 				041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		04D39B902017209100733232 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04D39B93201720A200733232 /* CollectController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04D39B912017209100733232 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04D39B922017209100733232 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */,
+				04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */,
+				04D39B99201720F100733232 /* CollectTimeLineRightCell.swift */,
+				04D39B9A201720F100733232 /* CollectTimeLineRightCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		04DBAB961FD63A1A0083B9FF /* Iconfont */ = {
@@ -556,7 +595,10 @@
 			files = (
 				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
 				041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */,
+				04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */,
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
+				04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */,
+				04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */,
 				0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
 				0410859E20107C6F002B2F02 /* CarsouelCell.xib in Resources */,
@@ -643,10 +685,10 @@
 				0410859F20107CC5002B2F02 /* CarouselModel.swift in Sources */,
 				041085A020107CC5002B2F02 /* CarouselView.swift in Sources */,
 				041085A120107CC5002B2F02 /* CarouselEngine.swift in Sources */,
-				041C35F32005BEFC0059CF77 /* CollectController.swift in Sources */,
 				0410858E20107AE4002B2F02 /* PublicMacros.swift in Sources */,
 				041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */,
 				041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */,
+				04D39B9B201720F100733232 /* CollectTimeLineRightCell.swift in Sources */,
 				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
 				041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */,
 				0410859620107AE4002B2F02 /* WriteRefreshView.swift in Sources */,
@@ -662,13 +704,15 @@
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				0410859220107AE4002B2F02 /* RefreshViewAnimator.swift in Sources */,
 				0410859420107AE4002B2F02 /* UIScrollView+PullToRefresh.swift in Sources */,
+				04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */,
 				041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */,
 				041085A320107E7D002B2F02 /* StickyPageControl.swift in Sources */,
-				041085EF2014E402002B2F02 /* ClassCell.swift in Sources */,
+				04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
 				0410858D20107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */,
+				04D39B94201720A200733232 /* CollectController.swift in Sources */,
 				041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */,
 				041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */,
 				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,
