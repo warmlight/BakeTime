@@ -110,6 +110,7 @@ extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSour
         }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: RecommendCell.self), for: indexPath) as! RecommendCell
+      
         return cell
     }
     

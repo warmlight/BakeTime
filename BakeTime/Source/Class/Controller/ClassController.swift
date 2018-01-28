@@ -55,8 +55,11 @@ extension ClassController {
     
     private func setupCollectionView() {
         let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 3
-        layout.itemSize = CGSize(width: view.frame.width, height: 140)
+        layout.minimumInteritemSpacing = 0
+        layout.minimumLineSpacing = 0
+        layout.sectionInset = .zero
+        
+        layout.itemSize = CGSize(width: self.view.frame.width / 2 , height: self.view.frame.width / 2 )
 
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView?.bounces = false
@@ -75,7 +78,7 @@ extension ClassController: UICollectionViewDelegate,UICollectionViewDataSource,U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 12
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -90,26 +93,38 @@ extension ClassController: UICollectionViewDelegate,UICollectionViewDataSource,U
     
     func mockData(indexPath: IndexPath, cell: ClassCoverCell) {
         switch indexPath.row {
-        case 0:
+        case 0,6:
             cell.imageView.image = #imageLiteral(resourceName: "pie")
             cell.chineseTitleLabel.text = "派"
             cell.englishTitleLabel.text = "Pie"
-        case 1:
+        case 1,7:
             cell.imageView.image = #imageLiteral(resourceName: "cake")
             cell.chineseTitleLabel.text = "蛋糕"
             cell.englishTitleLabel.text = "Cake"
-        case 2:
+        case 2,8:
             cell.imageView.image = #imageLiteral(resourceName: "bread")
             cell.chineseTitleLabel.text = "面包"
             cell.englishTitleLabel.text = "Bread"
-        case 3:
+        case 3,9:
             cell.imageView.image = #imageLiteral(resourceName: "cookie")
             cell.chineseTitleLabel.text = "饼干"
             cell.englishTitleLabel.text = "Cookie"
+        case 4,10:
+            cell.imageView.image = #imageLiteral(resourceName: "Donut")
+            cell.chineseTitleLabel.text = "甜甜圈"
+            cell.englishTitleLabel.text = "Donut"
+        case 5,11:
+            cell.imageView.image = #imageLiteral(resourceName: "Macaron")
+            cell.chineseTitleLabel.text = "马卡龙"
+            cell.englishTitleLabel.text = "Macaron"
         default:
             break
         }
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize.init(width: 202, height: collectionView.width / 2)
+//    }
 }
 
 extension ClassController: UIScrollViewDelegate {

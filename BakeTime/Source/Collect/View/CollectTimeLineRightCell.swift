@@ -10,9 +10,16 @@ import UIKit
 
 class CollectTimeLineRightCell: UICollectionViewCell {
 
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var coverBgView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+        self.contentView.frame = self.frame
+//        coverBgView.addShadow(opacity: 0.6, radius: 10, offset: CGSize.init(width: 0, height: 0))
+    }
 }

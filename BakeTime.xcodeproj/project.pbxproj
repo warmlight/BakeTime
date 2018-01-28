@@ -48,6 +48,7 @@
 		0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */; };
 		04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */; };
 		04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */; };
+		04B85D1C2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */; };
 		04D39B94201720A200733232 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B93201720A200733232 /* CollectController.swift */; };
 		04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */; };
 		04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */; };
@@ -127,6 +128,7 @@
 		0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCoverCell.swift; sourceTree = "<group>"; };
 		04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCoverCell.xib; sourceTree = "<group>"; };
+		04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		04D39B93201720A200733232 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
 		04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTimeLineLeftCell.swift; sourceTree = "<group>"; };
 		04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTimeLineLeftCell.xib; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 		0410857E20107AE4002B2F02 /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */,
 				0410857F20107AE4002B2F02 /* CoverCollectionViewLayout.swift */,
 				0410858020107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift */,
 			);
@@ -702,6 +705,7 @@
 				0410859020107AE4002B2F02 /* DefaultViewAnimator.swift in Sources */,
 				0410858C20107AE4002B2F02 /* CoverCollectionViewLayout.swift in Sources */,
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
+				04B85D1C2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift in Sources */,
 				0410859220107AE4002B2F02 /* RefreshViewAnimator.swift in Sources */,
 				0410859420107AE4002B2F02 /* UIScrollView+PullToRefresh.swift in Sources */,
 				04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */,

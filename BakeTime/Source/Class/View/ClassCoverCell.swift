@@ -8,7 +8,7 @@
 
 import UIKit
 
-let yOffsetSpeed: CGFloat = 150.0
+let yOffsetSpeed: CGFloat = 100.0
 let xOffsetSpeed: CGFloat = 100.0
 
 class ClassCoverCell: UICollectionViewCell {
@@ -20,7 +20,6 @@ class ClassCoverCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         titleBgView.backgroundColor = UIColor.white.withAlphaComponent(0.8)
-//        self.setupBlurEffectView()
     }
     
     var imageHeight: CGFloat {
@@ -34,17 +33,5 @@ class ClassCoverCell: UICollectionViewCell {
     
     func offset(_ offset: CGPoint) {
         imageView.frame = self.contentView.bounds.offsetBy(dx: offset.x, dy: offset.y)
-    }
-    
-    func setupBlurEffectView() {
-        let blurEffect = UIBlurEffect(style: .light)
-//        let vibrancyEffect = UIVibrancyEffect(blurEffect: blurEffect)
-        let blurView = UIVisualEffectView(effect: blurEffect)
-        titleBgView.backgroundColor = UIColor.white.withAlphaComponent(0)
-
-        titleBgView.insertSubview(blurView, at: 0)
-        blurView.snp.makeConstraints { (make) in
-            make.edges.equalTo(titleBgView)
-        }
     }
 }

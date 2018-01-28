@@ -22,6 +22,15 @@ class CollectController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        self.collectionView?.reloadData()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+    }
 }
 
 // MARK: Setup UI
@@ -56,7 +65,7 @@ extension CollectController {
         collectionView?.dataSource = self;
         collectionView?.backgroundColor = .black
         
-        layout.itemSize = CGSize(width: screenW, height: screenW / 2)
+        layout.itemSize = CGSize(width: screenW, height: screenW / 2.2)
         
         self.view.addSubview(collectionView!)
     }
@@ -72,14 +81,19 @@ extension CollectController: UICollectionViewDelegate,UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell: UICollectionViewCell
         
         if indexPath.row % 2 == 0 {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectTimeLineLeftCell.self), for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectTimeLineLeftCell.self), for: indexPath)
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            return cell
+
         } else {
-            cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectTimeLineRightCell.self), for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CollectTimeLineRightCell.self), for: indexPath) as! CollectTimeLineRightCell
+            cell.setNeedsLayout()
+            cell.layoutIfNeeded()
+            return cell
         }
         
-        return cell
     }
 }
