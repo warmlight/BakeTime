@@ -22,88 +22,45 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j1O-qh-M4i">
                         <rect key="frame" x="0.0" y="0.0" width="394" height="103"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R23-vc-Uxu">
-                                <rect key="frame" x="20" y="30" width="354" height="59.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="414" translatesAutoresizingMaskIntoConstraints="NO" id="R23-vc-Uxu">
+                                <rect key="frame" x="10" y="37.5" width="374" height="40.5"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="对于这两个参数除了直接修改">
+                                    <fragment content="对于这两个参数除了直接修改tableview对应的属性之外仍然支持使用对应的代理方法设置。最后只要在UITableViewCell中设置contentView的约束即可">
                                         <attributes>
                                             <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="tableview">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="对应的属性之外仍然支持使用对应的代理方法设置。最后只要在">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="UITableViewCell">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="中设置">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="contentView">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="的约束即可">
-                                        <attributes>
-                                            <color key="NSColor" red="0.50980392156862742" green="0.51372549019607838" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6" tighteningFactorForTruncation="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="8" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jhn-2b-4Z2">
-                                <rect key="frame" x="0.0" y="0.0" width="6" height="20"/>
-                                <color key="backgroundColor" red="0.59215686274509804" green="0.87450980392156863" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="6" id="S7H-lf-T1V"/>
-                                    <constraint firstAttribute="height" constant="20" id="gbS-2C-xEA"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="关于TA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvd-HU-TWu">
-                                <rect key="frame" x="16" y="0.0" width="40" height="20"/>
+                                <rect key="frame" x="20" y="3" width="40" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1Y-PC-CjW">
+                                <rect key="frame" x="0.0" y="0.0" width="10" height="20"/>
+                                <color key="backgroundColor" red="0.59215686270000001" green="0.87450980389999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="OeZ-gA-qBc"/>
+                                    <constraint firstAttribute="width" constant="10" id="ahL-60-3hQ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="width" priority="750" constant="394" id="1lL-v1-gfr"/>
-                            <constraint firstItem="Mvd-HU-TWu" firstAttribute="centerY" secondItem="Jhn-2b-4Z2" secondAttribute="centerY" id="7HE-Uw-ATg"/>
-                            <constraint firstItem="R23-vc-Uxu" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" constant="20" id="8Ib-M0-SPs"/>
-                            <constraint firstItem="Mvd-HU-TWu" firstAttribute="leading" secondItem="Jhn-2b-4Z2" secondAttribute="trailing" constant="10" id="RBX-rK-r5u"/>
-                            <constraint firstAttribute="bottom" secondItem="R23-vc-Uxu" secondAttribute="bottom" priority="250" constant="10" id="aC3-Gm-iPy"/>
-                            <constraint firstItem="Mvd-HU-TWu" firstAttribute="top" secondItem="j1O-qh-M4i" secondAttribute="top" id="cWV-Py-7Se"/>
-                            <constraint firstItem="Jhn-2b-4Z2" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" id="fZc-gi-cPc"/>
-                            <constraint firstItem="Jhn-2b-4Z2" firstAttribute="top" secondItem="j1O-qh-M4i" secondAttribute="top" id="qD7-dS-Var"/>
-                            <constraint firstItem="R23-vc-Uxu" firstAttribute="top" secondItem="Mvd-HU-TWu" secondAttribute="bottom" constant="10" id="sGz-Lj-69O"/>
-                            <constraint firstAttribute="trailing" secondItem="R23-vc-Uxu" secondAttribute="trailing" constant="20" id="uzB-zC-3lY"/>
+                            <constraint firstItem="R23-vc-Uxu" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" constant="10" id="8Ib-M0-SPs"/>
+                            <constraint firstItem="D1Y-PC-CjW" firstAttribute="top" secondItem="j1O-qh-M4i" secondAttribute="top" id="AYA-Oq-jzf"/>
+                            <constraint firstAttribute="bottom" secondItem="R23-vc-Uxu" secondAttribute="bottom" constant="25" id="aC3-Gm-iPy"/>
+                            <constraint firstItem="Mvd-HU-TWu" firstAttribute="leading" secondItem="D1Y-PC-CjW" secondAttribute="trailing" constant="10" id="bWN-8C-aUz"/>
+                            <constraint firstItem="D1Y-PC-CjW" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" id="gth-G1-1Qk"/>
+                            <constraint firstItem="Mvd-HU-TWu" firstAttribute="centerY" secondItem="D1Y-PC-CjW" secondAttribute="centerY" id="h3D-PW-Xey"/>
+                            <constraint firstItem="R23-vc-Uxu" firstAttribute="top" secondItem="Mvd-HU-TWu" secondAttribute="bottom" constant="20" id="sGz-Lj-69O"/>
+                            <constraint firstAttribute="trailing" secondItem="R23-vc-Uxu" secondAttribute="trailing" constant="10" id="uzB-zC-3lY"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -117,6 +74,7 @@
             <viewLayoutGuide key="safeArea" id="IQa-4a-EIo"/>
             <size key="customSize" width="394" height="103"/>
             <connections>
+                <outlet property="briefLabel" destination="R23-vc-Uxu" id="hwb-36-GVB"/>
                 <outlet property="widthConstraints" destination="1lL-v1-gfr" id="vJX-0c-NnH"/>
             </connections>
             <point key="canvasLocation" x="206" y="108.5"/>

@@ -114,7 +114,7 @@
                             <constraint firstItem="cBQ-U2-haM" firstAttribute="bottom" secondItem="YFe-gO-8nK" secondAttribute="bottom" id="EPJ-Gr-U2x"/>
                             <constraint firstItem="JPc-cT-o3s" firstAttribute="leading" secondItem="tL2-SY-ujp" secondAttribute="leading" constant="20" id="EZL-pw-RrH"/>
                             <constraint firstItem="cBQ-U2-haM" firstAttribute="top" secondItem="YFe-gO-8nK" secondAttribute="top" constant="60" id="Joh-Fp-rUt"/>
-                            <constraint firstAttribute="width" constant="298" id="KeX-IE-Wfa"/>
+                            <constraint firstAttribute="width" priority="750" constant="298" id="KeX-IE-Wfa"/>
                             <constraint firstAttribute="bottom" secondItem="YFe-gO-8nK" secondAttribute="bottom" constant="30" id="Sqg-Rh-QZ9"/>
                             <constraint firstAttribute="trailing" secondItem="cBQ-U2-haM" secondAttribute="trailing" constant="20" id="Ssl-OL-z1x"/>
                             <constraint firstItem="YFe-gO-8nK" firstAttribute="top" secondItem="JPc-cT-o3s" secondAttribute="bottom" constant="50" id="Z2D-ZL-gZ2"/>

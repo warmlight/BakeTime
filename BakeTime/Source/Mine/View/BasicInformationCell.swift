@@ -15,7 +15,7 @@ class BasicInformationCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        self.translatesAutoresizingMaskIntoConstraints = false
         widthConstraints.constant = screenW
         setup()
     }

@@ -11,13 +11,15 @@ import UIKit
 class MenuCell: UICollectionViewCell {
 
     @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var widthConstraints: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         coverImageView.layer.masksToBounds = true
         coverImageView.layer.cornerRadius = 6
         coverImageView.contentMode = .scaleAspectFill
-        contentView.translatesAutoresizingMaskIntoConstraints = false
+        self.translatesAutoresizingMaskIntoConstraints = false
+        widthConstraints.constant = PersonalMenuCell.menuCellW
         // Initialization code
     }
 }

@@ -23,6 +23,7 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="VJR-5i-vxW">
                         <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
                         <constraints>
+                            <constraint firstAttribute="width" priority="750" constant="70" id="8qF-V3-gBD"/>
                             <constraint firstAttribute="width" secondItem="VJR-5i-vxW" secondAttribute="height" multiplier="1:1" id="Efd-d8-n1t"/>
                         </constraints>
                     </imageView>
@@ -55,6 +56,7 @@
             <size key="customSize" width="70" height="116"/>
             <connections>
                 <outlet property="coverImageView" destination="VJR-5i-vxW" id="4QC-du-DQ8"/>
+                <outlet property="widthConstraints" destination="8qF-V3-gBD" id="7fg-gs-IUl"/>
             </connections>
             <point key="canvasLocation" x="-239" y="160"/>
         </collectionViewCell>

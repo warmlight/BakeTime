@@ -10,11 +10,11 @@ import UIKit
 
 class BriefCell: UICollectionViewCell {
 
+    @IBOutlet weak var briefLabel: UILabel!
     @IBOutlet weak var widthConstraints: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.contentView.translatesAutoresizingMaskIntoConstraints = false
+        self.translatesAutoresizingMaskIntoConstraints = false
         widthConstraints.constant = screenW
-        // Initialization code
     }
 }

@@ -49,7 +49,6 @@ extension MineController {
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView?.delegate = self;
         collectionView?.dataSource = self;
-        collectionView?.backgroundColor = .black
         collectionView?.register(UINib(nibName: String(describing: BasicInformationCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: BasicInformationCell.self))
         collectionView?.register(UINib(nibName: String(describing: BriefCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: BriefCell.self))
         collectionView?.register(UINib(nibName: String(describing: PersonalMenuCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: PersonalMenuCell.self))
@@ -64,13 +63,13 @@ extension MineController: UICollectionViewDelegate,UICollectionViewDataSource,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.row {
         case 0:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BriefCell.self), for: indexPath)
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BasicInformationCell.self), for: indexPath)
             return cell
         case 1:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BriefCell.self), for: indexPath)

@@ -29,10 +29,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UXj-W9-lYg">
-                                <rect key="frame" x="0.0" y="28.5" width="384" height="98"/>
+                                <rect key="frame" x="0.0" y="38" width="384" height="88.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="98" id="vas-Xz-xFN"/>
+                                    <constraint firstAttribute="height" priority="750" constant="98" id="vas-Xz-xFN"/>
                                 </constraints>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="safeArea" id="nR9-Hy-mW9">
                                     <size key="itemSize" width="0.0" height="0.0"/>
@@ -44,9 +44,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="384" id="B96-GB-adg"/>
+                            <constraint firstAttribute="width" priority="750" constant="384" id="B96-GB-adg"/>
                             <constraint firstAttribute="bottom" secondItem="UXj-W9-lYg" secondAttribute="bottom" constant="30" id="K1K-uJ-tLF"/>
-                            <constraint firstItem="UXj-W9-lYg" firstAttribute="top" secondItem="xDF-o6-TPA" secondAttribute="bottom" constant="10" id="jLs-vi-qvq"/>
+                            <constraint firstItem="UXj-W9-lYg" firstAttribute="top" secondItem="xDF-o6-TPA" secondAttribute="bottom" constant="20" id="jLs-vi-qvq"/>
                             <constraint firstAttribute="trailing" secondItem="UXj-W9-lYg" secondAttribute="trailing" id="zjq-4A-S3K"/>
                         </constraints>
                     </view>
