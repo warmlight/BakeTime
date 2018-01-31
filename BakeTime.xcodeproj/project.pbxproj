@@ -32,7 +32,6 @@
 		041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA161FCD0386004E6920 /* UIDevice+DeviceName.swift */; };
 		041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */; };
 		041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E734AD1FD544BB00073253 /* WRNavigationBar.swift */; };
-		041C35F42005BEFC0059CF77 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35EF2005BEFB0059CF77 /* MeController.swift */; };
 		041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F82005BF350059CF77 /* RecommendController.swift */; };
 		041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35FD2005BF7F0059CF77 /* RecommendCell.swift */; };
 		041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041C35FE2005BF7F0059CF77 /* RecommendCell.xib */; };
@@ -46,8 +45,14 @@
 		0445FA191FCD54B8004E6920 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */; };
 		0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */; };
 		0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */; };
+		0453DC662020D3990032514F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453DC642020D3990032514F /* MenuCell.swift */; };
+		0453DC672020D3990032514F /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453DC652020D3990032514F /* MenuCell.xib */; };
+		045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */; };
+		045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */; };
 		04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */; };
 		04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */; };
+		046DC774201F0BC0002F7EA6 /* BriefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DC772201F0BC0002F7EA6 /* BriefCell.swift */; };
+		046DC775201F0BC0002F7EA6 /* BriefCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046DC773201F0BC0002F7EA6 /* BriefCell.xib */; };
 		04B85D1C2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */; };
 		04D39B94201720A200733232 /* CollectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B93201720A200733232 /* CollectController.swift */; };
 		04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */; };
@@ -61,6 +66,9 @@
 		04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */; };
 		04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9F1FD668B60083B9FF /* UIConfig.swift */; };
 		04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */; };
+		04FA56EE201EF59E0033A770 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA56EC201EF59E0033A770 /* MeController.swift */; };
+		04FA56F1201EF6360033A770 /* BasicInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA56EF201EF6360033A770 /* BasicInformationCell.swift */; };
+		04FA56F2201EF6360033A770 /* BasicInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA56F0201EF6360033A770 /* BasicInformationCell.xib */; };
 		2EDE6F4BA4CE7BC81B672A4B /* Pods_BakeTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25879BED337578CF178D4B10 /* Pods_BakeTime.framework */; };
 /* End PBXBuildFile section */
 
@@ -103,7 +111,6 @@
 		041085A72011F01A002B2F02 /* RecommendBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendBannerCell.swift; sourceTree = "<group>"; };
 		041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		041085EB2014E3C5002B2F02 /* ClassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassController.swift; sourceTree = "<group>"; };
-		041C35EF2005BEFB0059CF77 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		041C35F82005BF350059CF77 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		041C35FD2005BF7F0059CF77 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		041C35FE2005BF7F0059CF77 /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
@@ -126,8 +133,14 @@
 		0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		0453DC642020D3990032514F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		0453DC652020D3990032514F /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMenuCell.swift; sourceTree = "<group>"; };
+		045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalMenuCell.xib; sourceTree = "<group>"; };
 		04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCoverCell.swift; sourceTree = "<group>"; };
 		04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCoverCell.xib; sourceTree = "<group>"; };
+		046DC772201F0BC0002F7EA6 /* BriefCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefCell.swift; sourceTree = "<group>"; };
+		046DC773201F0BC0002F7EA6 /* BriefCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BriefCell.xib; sourceTree = "<group>"; };
 		04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		04D39B93201720A200733232 /* CollectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectController.swift; sourceTree = "<group>"; };
 		04D39B95201720D700733232 /* CollectTimeLineLeftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTimeLineLeftCell.swift; sourceTree = "<group>"; };
@@ -143,6 +156,9 @@
 		04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		04E734AD1FD544BB00073253 /* WRNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		04FA56EC201EF59E0033A770 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		04FA56EF201EF6360033A770 /* BasicInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInformationCell.swift; sourceTree = "<group>"; };
+		04FA56F0201EF6360033A770 /* BasicInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicInformationCell.xib; sourceTree = "<group>"; };
 		25879BED337578CF178D4B10 /* Pods_BakeTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BakeTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79DF60E36C1D45812F283F79 /* Pods-BakeTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.release.xcconfig"; sourceTree = "<group>"; };
 		F54F139CC98751F4EAD1288E /* Pods-BakeTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BakeTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BakeTime/Pods-BakeTime.debug.xcconfig"; sourceTree = "<group>"; };
@@ -271,7 +287,9 @@
 		041C35EE2005BEFB0059CF77 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				041C35EF2005BEFB0059CF77 /* MeController.swift */,
+				04FA56EB201EF59E0033A770 /* Controller */,
+				04FA56ED201EF59E0033A770 /* Model */,
+				04FA56EA201EF59E0033A770 /* View */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -468,6 +486,36 @@
 			path = "../../../../../../Downloads/WRNavigationBar_swift-master/WRNavigationBar_swift/WRNavigationBar_swift/BaseNavigationBar";
 			sourceTree = "<group>";
 		};
+		04FA56EA201EF59E0033A770 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04FA56EF201EF6360033A770 /* BasicInformationCell.swift */,
+				04FA56F0201EF6360033A770 /* BasicInformationCell.xib */,
+				046DC772201F0BC0002F7EA6 /* BriefCell.swift */,
+				046DC773201F0BC0002F7EA6 /* BriefCell.xib */,
+				045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */,
+				045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */,
+				0453DC642020D3990032514F /* MenuCell.swift */,
+				0453DC652020D3990032514F /* MenuCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04FA56EB201EF59E0033A770 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04FA56EC201EF59E0033A770 /* MeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04FA56ED201EF59E0033A770 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		C0907563F9F02BAE7F5DDDDA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,11 +647,15 @@
 				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
 				041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */,
 				04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */,
+				04FA56F2201EF6360033A770 /* BasicInformationCell.xib in Resources */,
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
 				04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */,
 				04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */,
 				0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */,
+				0453DC672020D3990032514F /* MenuCell.xib in Resources */,
+				046DC775201F0BC0002F7EA6 /* BriefCell.xib in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
+				045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */,
 				0410859E20107C6F002B2F02 /* CarsouelCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -690,14 +742,17 @@
 				041085A120107CC5002B2F02 /* CarouselEngine.swift in Sources */,
 				0410858E20107AE4002B2F02 /* PublicMacros.swift in Sources */,
 				041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */,
+				0453DC662020D3990032514F /* MenuCell.swift in Sources */,
 				041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */,
 				04D39B9B201720F100733232 /* CollectTimeLineRightCell.swift in Sources */,
 				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
 				041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */,
+				04FA56F1201EF6360033A770 /* BasicInformationCell.swift in Sources */,
 				0410859620107AE4002B2F02 /* WriteRefreshView.swift in Sources */,
-				041C35F42005BEFC0059CF77 /* MeController.swift in Sources */,
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
+				04FA56EE201EF59E0033A770 /* MeController.swift in Sources */,
 				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
+				045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
 				0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */,
@@ -721,6 +776,7 @@
 				041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */,
 				04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */,
 				0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */,
+				046DC774201F0BC0002F7EA6 /* BriefCell.swift in Sources */,
 				0410859520107AE4002B2F02 /* WriteAnimatior.swift in Sources */,
 				041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */,
 				0410858B20107AE4002B2F02 /* BubbleTransition.swift in Sources */,

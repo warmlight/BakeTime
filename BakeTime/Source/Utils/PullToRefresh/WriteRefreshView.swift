@@ -32,7 +32,7 @@ extension WriteRefreshView {
         let bezierPath = self.transformToBezierPath(string: "我爱学习")
         let layer = CAShapeLayer()
         layer.bounds = bezierPath.cgPath.boundingBox
-        layer.position = CGPoint.init(x: UIScreen.main.bounds.width / 2, y: 20)
+        layer.position = CGPoint.init(x: UIScreen.main.bounds.width / 2, y: 30)
         layer.isGeometryFlipped = true;
         layer.path = bezierPath.cgPath;
         layer.fillColor = UIColor.lightGray.cgColor

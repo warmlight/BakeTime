@@ -83,7 +83,7 @@ extension RecommendController {
         
         // Refresh control
         let animateView = WriteRefreshView()
-        let refreshHeader = PullToRefresh.init(refreshView: animateView, animator: WriteAnimatior.init(refreshView: animateView), height: 40, position: .top)
+        let refreshHeader = PullToRefresh.init(refreshView: animateView, animator: WriteAnimatior.init(refreshView: animateView), height: 60, position: .top)
         collectionView?.addPullToRefresh(refreshHeader) { DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
             self.collectionView?.endRefreshing(at: .top)
             }

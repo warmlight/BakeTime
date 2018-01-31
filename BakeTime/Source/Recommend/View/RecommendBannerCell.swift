@@ -62,7 +62,7 @@ class RecommendBannerCell: UICollectionViewCell {
     let centeredCollectionViewFlowLayout = CenteredCollectionViewFlowLayout()
     let collectionView: UICollectionView
     
-    let cellPercentWidth: CGFloat = 0.945
+    let cellPercentWidth: CGFloat = 0.93
     
     override init(frame: CGRect) {
         collectionView = UICollectionView(centeredCollectionViewFlowLayout: centeredCollectionViewFlowLayout)
@@ -97,7 +97,7 @@ extension RecommendBannerCell {
     }
     
     private func bindingSubviewsLayout() {
-        centeredCollectionViewFlowLayout.minimumLineSpacing = 6
+        centeredCollectionViewFlowLayout.minimumLineSpacing = 10
 
         self.collectionView.snp.makeConstraints { (make) in
             make.edges.equalTo(self)
