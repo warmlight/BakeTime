@@ -16,7 +16,7 @@ class MenuCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         coverImageView.layer.masksToBounds = true
-        coverImageView.layer.cornerRadius = 6
+        coverImageView.layer.cornerRadius = 4
         coverImageView.contentMode = .scaleAspectFill
         self.translatesAutoresizingMaskIntoConstraints = false
         widthConstraints.constant = PersonalMenuCell.menuCellW

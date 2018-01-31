@@ -22,14 +22,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbo-XM-GOI">
                         <rect key="frame" x="0.0" y="0.0" width="384" height="156"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-o6-TPA">
-                                <rect key="frame" x="16" y="3.5" width="25" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UXj-W9-lYg">
-                                <rect key="frame" x="0.0" y="38" width="384" height="88.5"/>
+                                <rect key="frame" x="0.0" y="40.5" width="384" height="86"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="750" constant="98" id="vas-Xz-xFN"/>
@@ -41,37 +35,43 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                             </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-h7-Hku">
+                                <rect key="frame" x="0.0" y="0.0" width="8" height="25"/>
+                                <color key="backgroundColor" red="0.59215686274509804" green="0.87450980392156863" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="DPe-uE-wYM"/>
+                                    <constraint firstAttribute="height" constant="25" id="sIc-SL-JmS"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="菜谱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDF-o6-TPA">
+                                <rect key="frame" x="16" y="4.5" width="27" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="xDF-o6-TPA" firstAttribute="centerY" secondItem="C4a-h7-Hku" secondAttribute="centerY" id="14k-ee-mrh"/>
+                            <constraint firstItem="C4a-h7-Hku" firstAttribute="top" secondItem="hbo-XM-GOI" secondAttribute="top" id="1yZ-kc-3bY"/>
                             <constraint firstAttribute="width" priority="750" constant="384" id="B96-GB-adg"/>
                             <constraint firstAttribute="bottom" secondItem="UXj-W9-lYg" secondAttribute="bottom" constant="30" id="K1K-uJ-tLF"/>
+                            <constraint firstItem="C4a-h7-Hku" firstAttribute="leading" secondItem="hbo-XM-GOI" secondAttribute="leading" id="PHf-ru-R9D"/>
+                            <constraint firstItem="xDF-o6-TPA" firstAttribute="leading" secondItem="C4a-h7-Hku" secondAttribute="trailing" constant="8" id="apx-8M-RS6"/>
                             <constraint firstItem="UXj-W9-lYg" firstAttribute="top" secondItem="xDF-o6-TPA" secondAttribute="bottom" constant="20" id="jLs-vi-qvq"/>
+                            <constraint firstItem="UXj-W9-lYg" firstAttribute="leading" secondItem="C4a-h7-Hku" secondAttribute="leading" id="l6X-JZ-eaV"/>
                             <constraint firstAttribute="trailing" secondItem="UXj-W9-lYg" secondAttribute="trailing" id="zjq-4A-S3K"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4a-h7-Hku">
-                        <rect key="frame" x="0.0" y="0.0" width="6" height="20"/>
-                        <color key="backgroundColor" red="0.59215686274509804" green="0.87450980392156863" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="6" id="DPe-uE-wYM"/>
-                            <constraint firstAttribute="height" constant="20" id="sIc-SL-JmS"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="hbo-XM-GOI" secondAttribute="bottom" id="0sV-s4-YsP"/>
-                <constraint firstItem="xDF-o6-TPA" firstAttribute="centerY" secondItem="C4a-h7-Hku" secondAttribute="centerY" id="DEo-Ep-6Ow"/>
                 <constraint firstAttribute="trailing" secondItem="hbo-XM-GOI" secondAttribute="trailing" id="DwI-UA-HbH"/>
                 <constraint firstItem="hbo-XM-GOI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FVp-K7-7yL"/>
-                <constraint firstItem="C4a-h7-Hku" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ru0-49-wqW"/>
                 <constraint firstItem="hbo-XM-GOI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="X7O-ER-4Ps"/>
-                <constraint firstItem="xDF-o6-TPA" firstAttribute="leading" secondItem="C4a-h7-Hku" secondAttribute="trailing" constant="10" id="bJe-JU-0YV"/>
-                <constraint firstItem="UXj-W9-lYg" firstAttribute="leading" secondItem="C4a-h7-Hku" secondAttribute="leading" id="dFw-dX-FfM"/>
-                <constraint firstItem="C4a-h7-Hku" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ksq-wB-lbl"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <viewLayoutGuide key="safeArea" id="2ep-yK-FAX"/>
             <size key="customSize" width="384" height="156"/>
             <connections>
                 <outlet property="collectionView" destination="UXj-W9-lYg" id="GHG-jx-3LR"/>

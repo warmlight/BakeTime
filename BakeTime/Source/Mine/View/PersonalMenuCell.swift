@@ -39,10 +39,7 @@ extension PersonalMenuCell: UICollectionViewDelegate,UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MenuCell.self), for: indexPath)
-        cell.backgroundColor = .red
-//        cell.contentView.translatesAutoresizingMaskIntoConstraints = false
         return cell
     }
     
