@@ -14,9 +14,9 @@ extension UIViewController {
         var rootViewController : UIViewController?
         
         for window in windows {
-            if let windowRootViewController = window.rootViewController {
+            if let windowRootViewController = window.rootViewController as? UITabBarController {
                 rootViewController = windowRootViewController
-                break
+//                break
             }
         }
         return self.top(of: rootViewController)

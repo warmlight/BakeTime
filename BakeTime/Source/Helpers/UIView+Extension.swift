@@ -105,7 +105,7 @@ extension UIView {
 }
 
 extension UIView {
-    func addShadow(opacity: Float, color: UIColor = UIConfig.btBlack, radius: CGFloat = 3, offset: CGSize = CGSize(width: 0, height: 0)) {
+    func addShadow(opacity: Float = 0.2, color: UIColor = UIConfig.btBlack, radius: CGFloat = 3, offset: CGSize = CGSize(width: 0, height: 0)) {
         self.layer.shadowRadius = radius
         self.layer.shadowOffset = offset
         self.layer.shadowColor = color.cgColor
@@ -115,5 +115,9 @@ extension UIView {
     
     func push(_ viewController: UIViewController, animated: Bool) {
         UIViewController.top?.navigationController?.pushViewController(viewController, animated: animated)
+    }
+    
+    func presented(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
+        UIViewController.top?.navigationController?.present(viewController, animated: animated, completion: completion)
     }
 }

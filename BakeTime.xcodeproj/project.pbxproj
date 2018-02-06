@@ -35,6 +35,11 @@
 		041C35FA2005BF360059CF77 /* RecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35F82005BF350059CF77 /* RecommendController.swift */; };
 		041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041C35FD2005BF7F0059CF77 /* RecommendCell.swift */; };
 		041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 041C35FE2005BF7F0059CF77 /* RecommendCell.xib */; };
+		04375E082021B0AC000AFD5F /* OpusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E062021B0AC000AFD5F /* OpusCell.swift */; };
+		04375E092021B0AC000AFD5F /* OpusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E072021B0AC000AFD5F /* OpusCell.xib */; };
+		04375E0C2021B246000AFD5F /* OpusItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E0A2021B246000AFD5F /* OpusItemCell.swift */; };
+		04375E0D2021B246000AFD5F /* OpusItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E0B2021B246000AFD5F /* OpusItemCell.xib */; };
+		04375E122028AE3F000AFD5F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E112028AE3F000AFD5F /* LoginController.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -114,6 +119,11 @@
 		041C35F82005BF350059CF77 /* RecommendController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendController.swift; sourceTree = "<group>"; };
 		041C35FD2005BF7F0059CF77 /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
 		041C35FE2005BF7F0059CF77 /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
+		04375E062021B0AC000AFD5F /* OpusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpusCell.swift; sourceTree = "<group>"; };
+		04375E072021B0AC000AFD5F /* OpusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpusCell.xib; sourceTree = "<group>"; };
+		04375E0A2021B246000AFD5F /* OpusItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpusItemCell.swift; sourceTree = "<group>"; };
+		04375E0B2021B246000AFD5F /* OpusItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpusItemCell.xib; sourceTree = "<group>"; };
+		04375E112028AE3F000AFD5F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -329,6 +339,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		04375E0E2028AE2C000AFD5F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04375E0F2028AE2C000AFD5F /* Controller */,
+				04375E102028AE2C000AFD5F /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04375E0F2028AE2C000AFD5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04375E112028AE3F000AFD5F /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04375E102028AE2C000AFD5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0445F9D21FCCFABA004E6920 = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +427,7 @@
 		0445FA0E1FCD00AE004E6920 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				04375E0E2028AE2C000AFD5F /* Login */,
 				0410857C20107AE4002B2F02 /* Utils */,
 				041C35F02005BEFC0059CF77 /* Class */,
 				041C35EC2005BEFB0059CF77 /* Collect */,
@@ -495,6 +530,10 @@
 				046DC773201F0BC0002F7EA6 /* BriefCell.xib */,
 				045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */,
 				045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */,
+				04375E062021B0AC000AFD5F /* OpusCell.swift */,
+				04375E072021B0AC000AFD5F /* OpusCell.xib */,
+				04375E0A2021B246000AFD5F /* OpusItemCell.swift */,
+				04375E0B2021B246000AFD5F /* OpusItemCell.xib */,
 				0453DC642020D3990032514F /* MenuCell.swift */,
 				0453DC652020D3990032514F /* MenuCell.xib */,
 			);
@@ -646,8 +685,10 @@
 			files = (
 				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
 				041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */,
+				04375E0D2021B246000AFD5F /* OpusItemCell.xib in Resources */,
 				04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */,
 				04FA56F2201EF6360033A770 /* BasicInformationCell.xib in Resources */,
+				04375E092021B0AC000AFD5F /* OpusCell.xib in Resources */,
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
 				04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */,
 				04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */,
@@ -737,6 +778,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04375E082021B0AC000AFD5F /* OpusCell.swift in Sources */,
 				0410859F20107CC5002B2F02 /* CarouselModel.swift in Sources */,
 				041085A020107CC5002B2F02 /* CarouselView.swift in Sources */,
 				041085A120107CC5002B2F02 /* CarouselEngine.swift in Sources */,
@@ -755,6 +797,8 @@
 				045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
+				04375E122028AE3F000AFD5F /* LoginController.swift in Sources */,
+				04375E0C2021B246000AFD5F /* OpusItemCell.swift in Sources */,
 				0445FA151FCD0144004E6920 /* AppDelegate.swift in Sources */,
 				0410859120107AE4002B2F02 /* PullToRefresh.swift in Sources */,
 				0410859020107AE4002B2F02 /* DefaultViewAnimator.swift in Sources */,

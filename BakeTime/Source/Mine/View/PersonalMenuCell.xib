@@ -22,8 +22,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hbo-XM-GOI">
                         <rect key="frame" x="0.0" y="0.0" width="384" height="156"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UXj-W9-lYg">
-                                <rect key="frame" x="0.0" y="40.5" width="384" height="86"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="UXj-W9-lYg">
+                                <rect key="frame" x="0.0" y="40.5" width="384" height="95.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" priority="750" constant="98" id="vas-Xz-xFN"/>
@@ -55,7 +55,7 @@
                             <constraint firstItem="xDF-o6-TPA" firstAttribute="centerY" secondItem="C4a-h7-Hku" secondAttribute="centerY" id="14k-ee-mrh"/>
                             <constraint firstItem="C4a-h7-Hku" firstAttribute="top" secondItem="hbo-XM-GOI" secondAttribute="top" id="1yZ-kc-3bY"/>
                             <constraint firstAttribute="width" priority="750" constant="384" id="B96-GB-adg"/>
-                            <constraint firstAttribute="bottom" secondItem="UXj-W9-lYg" secondAttribute="bottom" constant="30" id="K1K-uJ-tLF"/>
+                            <constraint firstAttribute="bottom" secondItem="UXj-W9-lYg" secondAttribute="bottom" constant="20" id="K1K-uJ-tLF"/>
                             <constraint firstItem="C4a-h7-Hku" firstAttribute="leading" secondItem="hbo-XM-GOI" secondAttribute="leading" id="PHf-ru-R9D"/>
                             <constraint firstItem="xDF-o6-TPA" firstAttribute="leading" secondItem="C4a-h7-Hku" secondAttribute="trailing" constant="8" id="apx-8M-RS6"/>
                             <constraint firstItem="UXj-W9-lYg" firstAttribute="top" secondItem="xDF-o6-TPA" secondAttribute="bottom" constant="20" id="jLs-vi-qvq"/>

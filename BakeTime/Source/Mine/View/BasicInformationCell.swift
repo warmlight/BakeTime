@@ -13,6 +13,11 @@ class BasicInformationCell: UICollectionViewCell {
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var widthConstraints: NSLayoutConstraint!
     
+    @IBAction func clickFollow(_ sender: UIButton) {
+        let login = LoginController()
+        self.presented(login, animated: true, completion: nil)
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         self.translatesAutoresizingMaskIntoConstraints = false

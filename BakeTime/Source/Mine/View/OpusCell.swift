@@ -1,34 +1,30 @@
 //
-//  PersonalMenuCell.swift
+//  OpusCell.swift
 //  BakeTime
 //
-//  Created by lyy on 2018/1/30.
+//  Created by lyy on 2018/1/31.
 //  Copyright © 2018年 lyy. All rights reserved.
 //
 
 import UIKit
 
-class PersonalMenuCell: UICollectionViewCell {
-    
-    static let menuCellW = screenW / 4
+class OpusCell: UICollectionViewCell {
 
-    @IBOutlet weak var collectionviewHeight: NSLayoutConstraint!
-    @IBOutlet weak var widthConstraints: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var widthConstraints: NSLayoutConstraint!
+    @IBOutlet weak var collectionViewHeightConstraints: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.translatesAutoresizingMaskIntoConstraints = false
         widthConstraints.constant = screenW
-        collectionviewHeight.constant = PersonalMenuCell.menuCellW + 50
-        
-        // Initialization code
+        collectionViewHeightConstraints.constant = PersonalMenuCell.menuCellW
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: String(describing: MenuCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: MenuCell.self))
+        collectionView.register(UINib(nibName: String(describing: OpusItemCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: OpusItemCell.self))
     }
 }
 
-extension PersonalMenuCell: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+extension OpusCell: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -38,7 +34,8 @@ extension PersonalMenuCell: UICollectionViewDelegate,UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MenuCell.self), for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: OpusItemCell.self), for: indexPath)
+        cell.backgroundColor = .red
         return cell
     }
     

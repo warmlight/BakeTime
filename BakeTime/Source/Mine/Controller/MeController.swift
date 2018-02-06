@@ -52,7 +52,7 @@ extension MineController {
         collectionView?.register(UINib(nibName: String(describing: BasicInformationCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: BasicInformationCell.self))
         collectionView?.register(UINib(nibName: String(describing: BriefCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: BriefCell.self))
         collectionView?.register(UINib(nibName: String(describing: PersonalMenuCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: PersonalMenuCell.self))
-        
+        collectionView?.register(UINib(nibName: String(describing: OpusCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: OpusCell.self))
         self.view.addSubview(collectionView!)
     }
 }
@@ -63,7 +63,7 @@ extension MineController: UICollectionViewDelegate,UICollectionViewDataSource,UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -76,6 +76,9 @@ extension MineController: UICollectionViewDelegate,UICollectionViewDataSource,UI
             return cell
         case 2:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: PersonalMenuCell.self), for: indexPath)
+            return cell
+        case 3:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: OpusCell.self), for: indexPath)
             return cell
         default:
             return UICollectionViewCell()
