@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OtherLoginWayView" customModule="BakeTime" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="187"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="—————其他登录方式—————" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neb-WW-y9j">
+                    <rect key="frame" x="80.5" y="0.0" width="194" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.61568627450980395" green="0.61568627450980395" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-P2-IEd">
+                    <rect key="frame" x="80" y="92" width="55" height="55"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSn-BS-bGf">
+                    <rect key="frame" x="219" y="92" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="5Ud-9w-9JQ"/>
+                        <constraint firstAttribute="height" constant="55" id="6tc-Wa-7TD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9yI-P2-IEd" firstAttribute="width" secondItem="XSn-BS-bGf" secondAttribute="width" id="5bI-NO-WVK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XSn-BS-bGf" secondAttribute="bottom" constant="40" id="6dn-Ll-nAP"/>
+                <constraint firstItem="neb-WW-y9j" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="I8X-kB-tlS"/>
+                <constraint firstItem="9yI-P2-IEd" firstAttribute="height" secondItem="XSn-BS-bGf" secondAttribute="height" id="MZj-Zg-RrI"/>
+                <constraint firstItem="9yI-P2-IEd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="80" id="PpP-60-Tjk"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XSn-BS-bGf" secondAttribute="trailing" constant="80" id="Zs9-UM-XUD"/>
+                <constraint firstItem="neb-WW-y9j" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="iza-hu-pMF"/>
+                <constraint firstItem="9yI-P2-IEd" firstAttribute="top" secondItem="XSn-BS-bGf" secondAttribute="top" id="w8y-hr-Af5"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="wechatLogo" destination="9yI-P2-IEd" id="XT1-Rm-hnp"/>
+                <outlet property="weiboLogo" destination="XSn-BS-bGf" id="4eW-eS-RcZ"/>
+            </connections>
+            <point key="canvasLocation" x="24" y="293.5"/>
+        </view>
+    </objects>
+</document>

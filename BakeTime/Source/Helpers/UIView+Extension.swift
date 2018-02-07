@@ -13,6 +13,53 @@ import UIKit
 
 extension UIView {
     
+    var x: CGFloat {
+        get {
+            return self.origin.x
+        }
+        set {
+            frame = CGRect(x: newValue, y: self.y, width: self.width, height: self.height)
+        }
+    }
+    
+    var y: CGFloat {
+        get {
+            return self.origin.y
+        }
+        set {
+            frame = CGRect(x: self.x, y: newValue, width: self.width, height: self.height)
+        }
+    }
+    
+    
+    var midX: CGFloat {
+        get {
+            return self.x + self.width / 2
+        }
+        set {
+            frame = CGRect(x: newValue - width / 2, y: y, width: width, height: height)
+        }
+    }
+    
+    var midY: CGFloat {
+        get {
+            return self.y + self.height / 2
+        }
+        set {
+            frame = CGRect(x: x, y: newValue - height / 2, width: width, height: height)
+        }
+    }
+    
+    
+    var center: CGPoint {
+        get {
+            return CGPoint(x: self.midX, y: self.midY)
+        }
+        set {
+            frame = CGRect(x: newValue.x - width / 2, y: newValue.y - height / 2, width: width, height: height)
+        }
+    }
+    
     var width: CGFloat {
         get {
             return frame.width
@@ -119,5 +166,11 @@ extension UIView {
     
     func presented(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
         UIViewController.top?.navigationController?.present(viewController, animated: animated, completion: completion)
+    }
+}
+
+extension UIView {
+    static func nibInit() -> UIView {
+        return UINib.init(nibName: String(describing: self), bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
     }
 }

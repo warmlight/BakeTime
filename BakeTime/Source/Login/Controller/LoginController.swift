@@ -16,10 +16,12 @@ class LoginController: UIViewController {
     var line1 = UIView()
     var line2 = UIView()
     var infoBgView = UIView()
+    var loginButton = TransitionButton()
     var gradientLayer = CAGradientLayer()
     var phoneNumTextField = UITextField()
     var passwordTextField = UITextField()
-    
+    var otherLoginWayView = UINib.init(nibName: String(describing: OtherLoginWayView.self), bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -51,6 +53,10 @@ class LoginController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    @objc func clickLoginButton() {
+        loginButton.startTransition()
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -58,7 +64,7 @@ class LoginController: UIViewController {
     }
 }
 
-// MARK: Setup UI
+// MARK: - Setup UI
 extension LoginController {
     
     private func setup() {
@@ -72,6 +78,8 @@ extension LoginController {
         setupBlurView()
         setupInfoBgView()
         setupTextFiled()
+        setupLoginButton()
+        setupOtherLoginWayView()
     }
     
     private func setupCardWall(line: Int, column: Int) -> [[UIView]] {
@@ -181,6 +189,15 @@ extension LoginController {
         
         self.view.layoutIfNeeded()
         
+        otherLoginWayView.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.view)
+            make.width.equalTo(self.view)
+            make.height.equalTo(120)
+            make.top.equalTo(infoBgView.snp.bottom).offset(screenH / 5)
+        }
+        
+        self.view.layoutIfNeeded()
+        
         phoneNumTextField.snp.makeConstraints { (make) in
             make.left.equalTo(view.snp.right)
             make.width.equalTo(infoBgView.frame.width - 50)
@@ -208,12 +225,33 @@ extension LoginController {
             make.top.equalTo(passwordTextField.snp.bottom).offset(5)
             make.height.equalTo(0.5)
         }
+        
+        loginButton.snp.makeConstraints { (make) in
+            make.left.equalTo(view.snp.right)
+            make.width.equalTo(180)
+            make.height.equalTo(35)
+            make.top.equalTo(infoBgView.snp.bottom).offset(-22)
+        }
 
         self.view.layoutIfNeeded()
     }
+    
+    private func setupLoginButton() {
+        loginButton.backgroundColor = UIConfig.btPink
+        loginButton.setTitle("登      陆", for: .normal)
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+        loginButton.addTarget(self, action: #selector(clickLoginButton), for: .touchDown)
+        
+        infoBgView.addSubview(loginButton)
+    }
+    
+    private func setupOtherLoginWayView() {
+        view.addSubview(otherLoginWayView)
+    }
 }
 
-// Animation
+// MARK: - Animation
 extension LoginController {
     private func moveAnimation() {
         moveCards()
@@ -241,7 +279,7 @@ extension LoginController {
     private func moveInfoBgView() {
         UIView.animate(withDuration: 1, delay: 0.4, options: .curveLinear, animations: {
             self.infoBgView.snp.updateConstraints({ (make) in
-                make.top.equalTo(self.view.snp.bottom).offset(-self.infoBgH - (self.view.frame.height - self.infoBgH) / 2)
+                make.top.equalTo(self.view.snp.bottom).offset(-self.infoBgH - (self.view.frame.height - self.infoBgH) / 5 * 3)
             })
             self.infoBgView.alpha = 1
             self.view.layoutIfNeeded()
@@ -254,7 +292,7 @@ extension LoginController {
         for (i, view) in infoBgView.subviews.enumerated() {
             UIView.animate(withDuration: 0.7, delay: 0.1 * Double(i), options: .curveEaseOut, animations: {
                 view.snp.updateConstraints({ (make) in
-                    make.left.equalTo(self.view.snp.right).offset(self.infoBgView.frame.origin.x - screenW + 25)
+                    make.left.equalTo(self.view.snp.right).offset(-(screenW - self.infoBgView.x - (self.infoBgView.width - view.width) / 2))
                 })
                 view.alpha = 1
                 self.view.layoutIfNeeded()

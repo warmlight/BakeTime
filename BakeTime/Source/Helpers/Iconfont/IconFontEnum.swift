@@ -18,4 +18,6 @@ public enum IconFontType: String {
     case Mine = "\u{e736}"
     case MineFill = "\u{e735}"
     case Search = "\u{e7da}"
+    case Wechat = "\u{e65b}"
+    case Weibo = "\u{e6b2}"
 }

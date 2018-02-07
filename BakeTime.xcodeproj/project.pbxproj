@@ -40,6 +40,11 @@
 		04375E0C2021B246000AFD5F /* OpusItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E0A2021B246000AFD5F /* OpusItemCell.swift */; };
 		04375E0D2021B246000AFD5F /* OpusItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E0B2021B246000AFD5F /* OpusItemCell.xib */; };
 		04375E122028AE3F000AFD5F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E112028AE3F000AFD5F /* LoginController.swift */; };
+		04375E262029B0C8000AFD5F /* LoadingSpinnerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E252029B0C8000AFD5F /* LoadingSpinnerLayer.swift */; };
+		04375E282029B0DA000AFD5F /* TransitionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E272029B0DA000AFD5F /* TransitionButton.swift */; };
+		04375E2C202A9FC3000AFD5F /* OtherLoginWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */; };
+		04375E2E202AA03F000AFD5F /* OtherLoginWayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */; };
+		04375E32202AA38D000AFD5F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04375E31202AA38D000AFD5F /* iconfont.ttf */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -64,7 +69,6 @@
 		04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */; };
 		04D39B9B201720F100733232 /* CollectTimeLineRightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D39B99201720F100733232 /* CollectTimeLineRightCell.swift */; };
 		04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D39B9A201720F100733232 /* CollectTimeLineRightCell.xib */; };
-		04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04DBAB941FD59EB50083B9FF /* iconfont.ttf */; };
 		04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB971FD63A1A0083B9FF /* IconFont.swift */; };
 		04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */; };
 		04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */; };
@@ -124,6 +128,11 @@
 		04375E0A2021B246000AFD5F /* OpusItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpusItemCell.swift; sourceTree = "<group>"; };
 		04375E0B2021B246000AFD5F /* OpusItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpusItemCell.xib; sourceTree = "<group>"; };
 		04375E112028AE3F000AFD5F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		04375E252029B0C8000AFD5F /* LoadingSpinnerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingSpinnerLayer.swift; sourceTree = "<group>"; };
+		04375E272029B0DA000AFD5F /* TransitionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionButton.swift; sourceTree = "<group>"; };
+		04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherLoginWayView.swift; sourceTree = "<group>"; };
+		04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherLoginWayView.xib; sourceTree = "<group>"; };
+		04375E31202AA38D000AFD5F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,7 +166,6 @@
 		04D39B96201720D700733232 /* CollectTimeLineLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTimeLineLeftCell.xib; sourceTree = "<group>"; };
 		04D39B99201720F100733232 /* CollectTimeLineRightCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectTimeLineRightCell.swift; sourceTree = "<group>"; };
 		04D39B9A201720F100733232 /* CollectTimeLineRightCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectTimeLineRightCell.xib; sourceTree = "<group>"; };
-		04DBAB941FD59EB50083B9FF /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
 		04DBAB971FD63A1A0083B9FF /* IconFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFont.swift; sourceTree = "<group>"; };
 		04DBAB981FD63A1A0083B9FF /* IconFontEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconFontEnum.swift; sourceTree = "<group>"; };
 		04DBAB9B1FD644B10083B9FF /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -203,10 +211,11 @@
 		0410857C20107AE4002B2F02 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				0410859720107BF8002B2F02 /* CarouselView */,
-				0410857D20107AE4002B2F02 /* BubbleTransition.swift */,
-				0410857E20107AE4002B2F02 /* CollectionViewFlowLayout */,
 				0410858120107AE4002B2F02 /* PublicMacros.swift */,
+				0410857D20107AE4002B2F02 /* BubbleTransition.swift */,
+				04375E242029B0A3000AFD5F /* TransitionLoadingButton */,
+				0410859720107BF8002B2F02 /* CarouselView */,
+				0410857E20107AE4002B2F02 /* CollectionViewFlowLayout */,
 				0410858220107AE4002B2F02 /* PullToRefresh */,
 			);
 			path = Utils;
@@ -359,8 +368,19 @@
 		04375E102028AE2C000AFD5F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */,
+				04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04375E242029B0A3000AFD5F /* TransitionLoadingButton */ = {
+			isa = PBXGroup;
+			children = (
+				04375E252029B0C8000AFD5F /* LoadingSpinnerLayer.swift */,
+				04375E272029B0DA000AFD5F /* TransitionButton.swift */,
+			);
+			path = TransitionLoadingButton;
 			sourceTree = "<group>";
 		};
 		0445F9D21FCCFABA004E6920 = {
@@ -393,8 +413,8 @@
 				0445F9E21FCCFABA004E6920 /* Main.storyboard */,
 				0445F9E51FCCFABA004E6920 /* Assets.xcassets */,
 				0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */,
-				04DBAB941FD59EB50083B9FF /* iconfont.ttf */,
 				0445F9EA1FCCFABA004E6920 /* Info.plist */,
+				04375E31202AA38D000AFD5F /* iconfont.ttf */,
 			);
 			path = BakeTime;
 			sourceTree = "<group>";
@@ -683,7 +703,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04DBAB951FD633450083B9FF /* iconfont.ttf in Resources */,
 				041C36002005BF7F0059CF77 /* RecommendCell.xib in Resources */,
 				04375E0D2021B246000AFD5F /* OpusItemCell.xib in Resources */,
 				04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */,
@@ -692,10 +711,12 @@
 				0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */,
 				04D39B9C201720F100733232 /* CollectTimeLineRightCell.xib in Resources */,
 				04D39B98201720D700733232 /* CollectTimeLineLeftCell.xib in Resources */,
+				04375E32202AA38D000AFD5F /* iconfont.ttf in Resources */,
 				0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */,
 				0453DC672020D3990032514F /* MenuCell.xib in Resources */,
 				046DC775201F0BC0002F7EA6 /* BriefCell.xib in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
+				04375E2E202AA03F000AFD5F /* OtherLoginWayView.xib in Resources */,
 				045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */,
 				0410859E20107C6F002B2F02 /* CarsouelCell.xib in Resources */,
 			);
@@ -790,6 +811,7 @@
 				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
 				041C35DF2002795B0059CF77 /* UIDevice+DeviceName.swift in Sources */,
 				04FA56F1201EF6360033A770 /* BasicInformationCell.swift in Sources */,
+				04375E282029B0DA000AFD5F /* TransitionButton.swift in Sources */,
 				0410859620107AE4002B2F02 /* WriteRefreshView.swift in Sources */,
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
 				04FA56EE201EF59E0033A770 /* MeController.swift in Sources */,
@@ -806,6 +828,7 @@
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				04B85D1C2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift in Sources */,
 				0410859220107AE4002B2F02 /* RefreshViewAnimator.swift in Sources */,
+				04375E2C202A9FC3000AFD5F /* OtherLoginWayView.swift in Sources */,
 				0410859420107AE4002B2F02 /* UIScrollView+PullToRefresh.swift in Sources */,
 				04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */,
 				041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */,
@@ -815,6 +838,7 @@
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
 				0410858D20107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */,
+				04375E262029B0C8000AFD5F /* LoadingSpinnerLayer.swift in Sources */,
 				04D39B94201720A200733232 /* CollectController.swift in Sources */,
 				041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */,
 				041085A82011F01A002B2F02 /* RecommendBannerCell.swift in Sources */,
