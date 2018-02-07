@@ -16,10 +16,13 @@ class LoginController: UIViewController {
     var infoBgView = LoginInfoBgView()
     var gradientLayer = CAGradientLayer()
     var otherLoginWayView = UINib.init(nibName: String(describing: OtherLoginWayView.self), bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+    
+    let transitionAnimator = BubbleTransition()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        self.transitioningDelegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -206,5 +209,14 @@ extension LoginController {
         }) { (_) in
             
         }
+    }
+}
+
+extension LoginController: UIViewControllerTransitioningDelegate {
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        transitionAnimator.bubbleColor = UIConfig.btPink
+        let point = infoBgView.convert(infoBgView.loginButton.center, to: view)
+        transitionAnimator.startingPoint = point
+        return transitionAnimator
     }
 }

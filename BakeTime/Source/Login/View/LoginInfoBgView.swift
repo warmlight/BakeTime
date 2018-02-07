@@ -9,13 +9,13 @@
 import UIKit
 
 class LoginInfoBgView: UIView {
-    let bgBothSideSpan: CGFloat = 40
-    let bgViewWidth: CGFloat = screenW - 80
-    let textFiledBothSideSpan: CGFloat = 25
+    private let bgBothSideSpan: CGFloat = 40
+    private let bgViewWidth: CGFloat = screenW - 80
+    private let textFiledBothSideSpan: CGFloat = 25
     
+    private var line1 = UIView()
+    private var line2 = UIView()
     var loginButton = TransitionButton()
-    var line1 = UIView()
-    var line2 = UIView()
     var phoneNumTextField = UITextField()
     var passwordTextField = UITextField()
 
@@ -58,32 +58,6 @@ class LoginInfoBgView: UIView {
         
         return view
     }
-    
-//    - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event
-//
-//    {
-//
-//    UIView * view = [super hitTest:point withEvent:event];
-//
-//    if (view == nil) {
-//
-//    // 转换坐标系
-//
-//    CGPoint newPoint = [commentImageView convertPoint:point fromView:self];
-//
-//    // 判断触摸点是否在button上
-//
-//    if (CGRectContainsPoint(commentImageView.bounds, newPoint)) {
-//
-//    view = commentImageView;
-//
-//    }
-//
-//    }
-//
-//    return view;
-//
-//    }
 }
 
 // MARK: Setup UI

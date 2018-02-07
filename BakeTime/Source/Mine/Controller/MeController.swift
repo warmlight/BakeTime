@@ -85,4 +85,3 @@ extension MineController: UICollectionViewDelegate,UICollectionViewDataSource,UI
         }
     }
 }
-
