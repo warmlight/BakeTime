@@ -60,7 +60,7 @@ extension RecommendController {
     private func setupCollectionView() {
         let layout = SpringCollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
-        layout.itemSize = CGSize(width: screenW, height: 225)
+        layout.itemSize = CGSize(width: screenW, height: 255)
         if #available(iOS 11.0, *) {
             layout.sectionInsetReference = .fromSafeArea
         } else {
@@ -116,6 +116,6 @@ extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.width - collectionView.frame.width.truncatingRemainder(dividingBy: 2)
-        return CGSize(width: cellWidth, height: 235)
+        return CGSize(width: cellWidth, height: 255)
     }
 }

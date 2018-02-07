@@ -24,7 +24,7 @@ open class BubbleTransition: NSObject {
 
 extension BubbleTransition: UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return duration
+        return duration + 0.5
     }
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -57,14 +57,17 @@ extension BubbleTransition: UIViewControllerAnimatedTransitioning {
                 self.bubble.transform = CGAffineTransform.identity
                 
             }, completion: { (_) in
-                UIView.animate(withDuration: 0.8, animations: {
+                UIView.animate(withDuration: 0.5, animations: {
                     presentedControllerView.alpha = 1
                 }, completion: { (finish) in
                     self.bubble.isHidden = true
+                    transitionContext.completeTransition(true)
                 })
-                transitionContext.completeTransition(true)
+                if self.transitionMode == .present {
+                    toViewController?.endAppearanceTransition()
+                }
                 fromViewController?.endAppearanceTransition()
-                toViewController?.endAppearanceTransition()
+
             })
             
         } else {

@@ -30,8 +30,6 @@ class LoadingSpinnerLayer: CAShapeLayer {
         self.lineWidth = 1
     }
     
-    
-    
     func animation() {
         self.isHidden = false
         let rotate = CABasicAnimation(keyPath: "transform.rotation.z")

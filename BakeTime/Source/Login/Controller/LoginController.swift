@@ -15,7 +15,7 @@ class LoginController: UIViewController {
 
     var infoBgView = LoginInfoBgView()
     var gradientLayer = CAGradientLayer()
-    var otherLoginWayView = UINib.init(nibName: String(describing: OtherLoginWayView.self), bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
+    var otherLoginWayView = OtherLoginWayView.nibInit()
     
     let transitionAnimator = BubbleTransition()
 
@@ -42,6 +42,7 @@ class LoginController: UIViewController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
         if infoBgView.phoneNumTextField.isFirstResponder || infoBgView.passwordTextField.isFirstResponder {
             infoBgView.phoneNumTextField.resignFirstResponder()
             infoBgView.passwordTextField.resignFirstResponder()
@@ -215,6 +216,7 @@ extension LoginController {
 extension LoginController: UIViewControllerTransitioningDelegate {
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         transitionAnimator.bubbleColor = UIConfig.btPink
+        transitionAnimator.transitionMode = .dismiss
         let point = infoBgView.convert(infoBgView.loginButton.center, to: view)
         transitionAnimator.startingPoint = point
         return transitionAnimator

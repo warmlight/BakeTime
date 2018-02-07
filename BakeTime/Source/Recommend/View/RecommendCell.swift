@@ -15,14 +15,18 @@ class RecommendCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupUI()
+        let images = [#imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Macaron"), #imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "cookie"), #imageLiteral(resourceName: "Macaron")]
+        coverImage.image = images[randomCustom(min: 0, max: 5)]
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-//        coverBgView.addShadow(opacity: 0.5, radius: 5, offset: CGSize.init(width: 0, height: 4))
-//        titleView.isHidden = true
-        titleView.addShadow(opacity: 0.1, radius: 4, offset: CGSize.init(width: 0, height: 5))
+        coverBgView.addShadow(opacity: 0.2, radius: 3, offset: CGSize.init(width: 0, height: 0))
+    }
+    
+    func randomCustom(min: Int, max: Int) -> Int {
+        let y = arc4random() % UInt32(max) + UInt32(min)
+        return Int(y)
     }
 }
 
@@ -34,9 +38,9 @@ extension RecommendCell {
     }
     
     private func setupTitleView() {
-        titleView.clipsToBounds = true
-        titleView.layer.cornerRadius = 0
-        titleView.layer.masksToBounds = false
+//        titleView.clipsToBounds = true
+//        titleView.layer.cornerRadius = 0
+//        titleView.layer.masksToBounds = true
     }
     
     private func setupCoverImage() {

@@ -44,15 +44,14 @@ extension RecommendBannerContentCell {
     private func setupImageView() {
         imageView.contentMode = .scaleAspectFill
         imageView.layer.masksToBounds = true
-//        imageView.layer.cornerRadius = 4
         imageView.image = #imageLiteral(resourceName: "cake")
         
         contentView.addSubview(imageView)
     }
     
     private func setupContentView() {
-        contentView.layer.cornerRadius = 6
-        contentView.layer.masksToBounds = true
+//        contentView.layer.cornerRadius = 6
+//        contentView.layer.masksToBounds = true
     }
 }
 
@@ -62,7 +61,7 @@ class RecommendBannerCell: UICollectionViewCell {
     let centeredCollectionViewFlowLayout = CenteredCollectionViewFlowLayout()
     let collectionView: UICollectionView
     
-    let cellPercentWidth: CGFloat = 0.93
+    let cellPercentWidth: CGFloat = 0.92
     
     override init(frame: CGRect) {
         collectionView = UICollectionView(centeredCollectionViewFlowLayout: centeredCollectionViewFlowLayout)
