@@ -21,8 +21,10 @@ class OtherLoginWayView: UIView {
     func setupLogo() {
         wechatLogo.font = UIFont(name: "iconFont", size: 50)
         wechatLogo.text = IconFontType.Wechat.rawValue
+        wechatLogo.textColor = UIConfig.btPink
         
         weiboLogo.font = UIFont(name: "iconFont", size: 50)
         weiboLogo.text = IconFontType.Weibo.rawValue
+        weiboLogo.textColor = UIConfig.btPink
     }
 }

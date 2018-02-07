@@ -45,6 +45,7 @@
 		04375E2C202A9FC3000AFD5F /* OtherLoginWayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */; };
 		04375E2E202AA03F000AFD5F /* OtherLoginWayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */; };
 		04375E32202AA38D000AFD5F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04375E31202AA38D000AFD5F /* iconfont.ttf */; };
+		04375E34202ADC39000AFD5F /* LoginInfoBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E33202ADC39000AFD5F /* LoginInfoBgView.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -133,6 +134,7 @@
 		04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherLoginWayView.swift; sourceTree = "<group>"; };
 		04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherLoginWayView.xib; sourceTree = "<group>"; };
 		04375E31202AA38D000AFD5F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		04375E33202ADC39000AFD5F /* LoginInfoBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoBgView.swift; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			children = (
 				04375E2B202A9FC3000AFD5F /* OtherLoginWayView.swift */,
 				04375E2D202AA03F000AFD5F /* OtherLoginWayView.xib */,
+				04375E33202ADC39000AFD5F /* LoginInfoBgView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -832,6 +835,7 @@
 				0410859420107AE4002B2F02 /* UIScrollView+PullToRefresh.swift in Sources */,
 				04D39B97201720D700733232 /* CollectTimeLineLeftCell.swift in Sources */,
 				041085ED2014E3C5002B2F02 /* ClassController.swift in Sources */,
+				04375E34202ADC39000AFD5F /* LoginInfoBgView.swift in Sources */,
 				041085A320107E7D002B2F02 /* StickyPageControl.swift in Sources */,
 				04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,

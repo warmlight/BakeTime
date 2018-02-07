@@ -13,13 +13,8 @@ class LoginController: UIViewController {
     var columnsCards = [[UIView]]()
     var visualView: UIVisualEffectView?
 
-    var line1 = UIView()
-    var line2 = UIView()
-    var infoBgView = UIView()
-    var loginButton = TransitionButton()
+    var infoBgView = LoginInfoBgView()
     var gradientLayer = CAGradientLayer()
-    var phoneNumTextField = UITextField()
-    var passwordTextField = UITextField()
     var otherLoginWayView = UINib.init(nibName: String(describing: OtherLoginWayView.self), bundle: nil).instantiate(withOwner: nil, options: nil).first as! UIView
 
     override func viewDidLoad() {
@@ -44,24 +39,20 @@ class LoginController: UIViewController {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if phoneNumTextField.isFirstResponder || passwordTextField.isFirstResponder {
-            phoneNumTextField.resignFirstResponder()
-            passwordTextField.resignFirstResponder()
+        if infoBgView.phoneNumTextField.isFirstResponder || infoBgView.passwordTextField.isFirstResponder {
+            infoBgView.phoneNumTextField.resignFirstResponder()
+            infoBgView.passwordTextField.resignFirstResponder()
             return
         }
         
         self.dismiss(animated: true, completion: nil)
     }
-    
-    @objc func clickLoginButton() {
-        loginButton.startTransition()
-    }
-    
+
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         infoBgView.addShadow(radius: 6, offset: CGSize.init(width: 0, height: 3))
-    }
+    }   
 }
 
 // MARK: - Setup UI
@@ -77,14 +68,12 @@ extension LoginController {
         setupGradientBg()
         setupBlurView()
         setupInfoBgView()
-        setupTextFiled()
-        setupLoginButton()
         setupOtherLoginWayView()
     }
     
     private func setupCardWall(line: Int, column: Int) -> [[UIView]] {
         var cardWallColumnArr:[[UIView]] = []
-        var images = [#imageLiteral(resourceName: "bread"), #imageLiteral(resourceName: "pie"), #imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "cookie"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Macaron")]
+        var images = [#imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Macaron")]
         for i in 0..<column {
             var oneColumn = [UIView]()
             var lastView = self.view
@@ -148,37 +137,6 @@ extension LoginController {
         view.addSubview(visualView!)
     }
     
-    private func setupTextFiled() {
-        phoneNumTextField.alpha = 0
-        phoneNumTextField.textAlignment = .center
-        phoneNumTextField.backgroundColor = .clear
-        phoneNumTextField.textColor = UIConfig.btBlack
-        phoneNumTextField.placeholder = "用户名，没有会自动注册"
-        phoneNumTextField.font = UIFont.systemFont(ofSize: 13)
-        phoneNumTextField.attributedPlaceholder = NSAttributedString(string: "用户名，没有会自动注册",
-                                                               attributes: [NSAttributedStringKey.foregroundColor: UIConfig.btGray])
-        
-        passwordTextField.alpha = 0
-        passwordTextField.placeholder = "密码"
-        passwordTextField.textAlignment = .center
-        passwordTextField.backgroundColor = .clear
-        passwordTextField.isSecureTextEntry = true
-        passwordTextField.textColor = UIConfig.btBlack
-        passwordTextField.font = UIFont.systemFont(ofSize: 13)
-        passwordTextField.attributedPlaceholder = NSAttributedString(string: "密码",
-                                                                     attributes: [NSAttributedStringKey.foregroundColor: UIConfig.btGray])
-        
-        line1.alpha = 0
-        line1.backgroundColor = UIConfig.btGray
-        line2.alpha = 0
-        line2.backgroundColor = UIConfig.btGray
-        
-        infoBgView.addSubview(phoneNumTextField)
-        infoBgView.addSubview(line1)
-        infoBgView.addSubview(passwordTextField)
-        infoBgView.addSubview(line2)
-    }
-    
     private func bindingSubviewsLayout() {
         infoBgView.snp.makeConstraints { (make) in
             make.centerX.equalTo(self.view)
@@ -195,55 +153,8 @@ extension LoginController {
             make.height.equalTo(120)
             make.top.equalTo(infoBgView.snp.bottom).offset(screenH / 5)
         }
-        
+   
         self.view.layoutIfNeeded()
-        
-        phoneNumTextField.snp.makeConstraints { (make) in
-            make.left.equalTo(view.snp.right)
-            make.width.equalTo(infoBgView.frame.width - 50)
-            make.top.equalTo(infoBgView).offset(35)
-            make.height.equalTo(30)
-        }
-        
-        line1.snp.makeConstraints { (make) in
-            make.left.equalTo(view.snp.right)
-            make.width.equalTo(phoneNumTextField)
-            make.top.equalTo(phoneNumTextField.snp.bottom).offset(5)
-            make.height.equalTo(0.5)
-        }
-        
-        passwordTextField.snp.makeConstraints { (make) in
-            make.left.equalTo(view.snp.right)
-            make.width.equalTo(infoBgView.frame.width - 50)
-            make.top.equalTo(line1).offset(30)
-            make.height.equalTo(30)
-        }
-        
-        line2.snp.makeConstraints { (make) in
-            make.left.equalTo(view.snp.right)
-            make.width.equalTo(passwordTextField)
-            make.top.equalTo(passwordTextField.snp.bottom).offset(5)
-            make.height.equalTo(0.5)
-        }
-        
-        loginButton.snp.makeConstraints { (make) in
-            make.left.equalTo(view.snp.right)
-            make.width.equalTo(180)
-            make.height.equalTo(35)
-            make.top.equalTo(infoBgView.snp.bottom).offset(-22)
-        }
-
-        self.view.layoutIfNeeded()
-    }
-    
-    private func setupLoginButton() {
-        loginButton.backgroundColor = UIConfig.btPink
-        loginButton.setTitle("登      陆", for: .normal)
-        loginButton.setTitleColor(.white, for: .normal)
-        loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-        loginButton.addTarget(self, action: #selector(clickLoginButton), for: .touchDown)
-        
-        infoBgView.addSubview(loginButton)
     }
     
     private func setupOtherLoginWayView() {
@@ -289,18 +200,7 @@ extension LoginController {
     }
     
     private func moveInfoBgSubViews() {
-        for (i, view) in infoBgView.subviews.enumerated() {
-            UIView.animate(withDuration: 0.7, delay: 0.1 * Double(i), options: .curveEaseOut, animations: {
-                view.snp.updateConstraints({ (make) in
-                    make.left.equalTo(self.view.snp.right).offset(-(screenW - self.infoBgView.x - (self.infoBgView.width - view.width) / 2))
-                })
-                view.alpha = 1
-                self.view.layoutIfNeeded()
-            }) { (_) in
-                
-            }
-        }
-        
+        infoBgView.moveSubViews()
         UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.visualView?.alpha = 1
         }) { (_) in
