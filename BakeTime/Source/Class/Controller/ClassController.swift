@@ -91,6 +91,11 @@ extension ClassController: UICollectionViewDelegate,UICollectionViewDataSource,U
         return parallaxCell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let listVC = ClassListController()
+        self.navigationController?.pushViewController(listVC, animated: true)
+    }
+    
     func mockData(indexPath: IndexPath, cell: ClassCoverCell) {
         switch indexPath.row {
         case 0,6:
@@ -121,10 +126,6 @@ extension ClassController: UICollectionViewDelegate,UICollectionViewDataSource,U
             break
         }
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize.init(width: 202, height: collectionView.width / 2)
-//    }
 }
 
 extension ClassController: UIScrollViewDelegate {

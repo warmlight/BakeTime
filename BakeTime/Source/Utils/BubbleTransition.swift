@@ -34,8 +34,8 @@ extension BubbleTransition: UIViewControllerAnimatedTransitioning {
         let fromViewController = transitionContext.viewController(forKey: .from)
         let toViewController = transitionContext.viewController(forKey: .to)
         
-        fromViewController?.beginAppearanceTransition(false, animated: true)
-        toViewController?.beginAppearanceTransition(true, animated: true)
+//        fromViewController?.beginAppearanceTransition(false, animated: true)
+//        toViewController?.beginAppearanceTransition(true, animated: true)
         
         if transitionMode == .present || transitionMode == .dismiss {
             let presentedControllerView = transitionContext.view(forKey: .to)!
@@ -48,26 +48,28 @@ extension BubbleTransition: UIViewControllerAnimatedTransitioning {
             bubble.center = startingPoint
             bubble.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             bubble.backgroundColor = bubbleColor
-            containerView.addSubview(bubble)
             
             presentedControllerView.alpha = 0
             containerView.addSubview(presentedControllerView)
+            containerView.addSubview(bubble)
+
             
             UIView.animate(withDuration: duration, animations: {
                 self.bubble.transform = CGAffineTransform.identity
-                
             }, completion: { (_) in
+                presentedControllerView.alpha = 1
+
                 UIView.animate(withDuration: 0.5, animations: {
-                    presentedControllerView.alpha = 1
+                    self.bubble.alpha = 0
                 }, completion: { (finish) in
                     self.bubble.isHidden = true
                     transitionContext.completeTransition(true)
                 })
-                if self.transitionMode == .present {
-                    toViewController?.endAppearanceTransition()
-                }
-                fromViewController?.endAppearanceTransition()
-
+//                if self.transitionMode == .present {
+//                    toViewController?.endAppearanceTransition()
+//                }
+//
+//                fromViewController?.endAppearanceTransition()
             })
             
         } else {

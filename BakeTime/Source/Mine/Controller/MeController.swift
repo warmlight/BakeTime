@@ -16,6 +16,10 @@ class MineController: BaseViewController {
         setup()
         self.navigationController?.navigationBar.clipsToBounds = true
     }
+    
+    @objc func clickSetting() {
+    
+    }
 }
 
 // MARK: Setup UI
@@ -24,6 +28,7 @@ extension MineController {
     
     fileprivate func setup() {
         setupUI()
+        setupNavigationBar()
         bindingSubviewsLayout()
     }
     
@@ -37,6 +42,14 @@ extension MineController {
             make.top.equalTo(topLayoutGuide.snp.bottom)
             make.bottom.equalTo(bottomLayoutGuide.snp.top)
         }
+    }
+    
+    private func setupNavigationBar() {
+        let settingItem = UIButton.init(type: .custom)
+        settingItem.frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
+        settingItem.setImage(#imageLiteral(resourceName: "Settings"), for: .normal)
+        settingItem.addTarget(self, action: #selector(clickSetting), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: settingItem)
     }
     
     private func setupCollectionView() {

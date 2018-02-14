@@ -16,7 +16,6 @@ class LoginController: UIViewController {
     var infoBgView = LoginInfoBgView()
     var gradientLayer = CAGradientLayer()
     var otherLoginWayView = OtherLoginWayView.nibInit()
-    
     let transitionAnimator = BubbleTransition()
 
     override func viewDidLoad() {

@@ -48,6 +48,8 @@
 		04375E34202ADC39000AFD5F /* LoginInfoBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E33202ADC39000AFD5F /* LoginInfoBgView.swift */; };
 		04375E37202B0126000AFD5F /* ClassListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E35202B0126000AFD5F /* ClassListCell.swift */; };
 		04375E38202B0126000AFD5F /* ClassListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E36202B0126000AFD5F /* ClassListCell.xib */; };
+		04375E3A202D7094000AFD5F /* ClassListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E39202D7094000AFD5F /* ClassListController.swift */; };
+		04375E3C202D9A02000AFD5F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E3B202D9A02000AFD5F /* SearchController.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -139,6 +141,8 @@
 		04375E33202ADC39000AFD5F /* LoginInfoBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInfoBgView.swift; sourceTree = "<group>"; };
 		04375E35202B0126000AFD5F /* ClassListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListCell.swift; sourceTree = "<group>"; };
 		04375E36202B0126000AFD5F /* ClassListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassListCell.xib; sourceTree = "<group>"; };
+		04375E39202D7094000AFD5F /* ClassListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListController.swift; sourceTree = "<group>"; };
+		04375E3B202D9A02000AFD5F /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -280,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				041085EB2014E3C5002B2F02 /* ClassController.swift */,
+				04375E39202D7094000AFD5F /* ClassListController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				041C35F82005BF350059CF77 /* RecommendController.swift */,
+				04375E3B202D9A02000AFD5F /* SearchController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -827,6 +833,7 @@
 				04FA56EE201EF59E0033A770 /* MeController.swift in Sources */,
 				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
 				045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */,
+				04375E3A202D7094000AFD5F /* ClassListController.swift in Sources */,
 				04DBAB9A1FD63A1A0083B9FF /* IconFontEnum.swift in Sources */,
 				04DBAB9C1FD644B10083B9FF /* UIColor+Extension.swift in Sources */,
 				04375E122028AE3F000AFD5F /* LoginController.swift in Sources */,
@@ -848,6 +855,7 @@
 				04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
+				04375E3C202D9A02000AFD5F /* SearchController.swift in Sources */,
 				0410858D20107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */,
 				04375E262029B0C8000AFD5F /* LoadingSpinnerLayer.swift in Sources */,

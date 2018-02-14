@@ -13,6 +13,7 @@ class RecommendController: BaseViewController {
     
     var sourceCount = 20
     var collectionView: UICollectionView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -27,6 +28,23 @@ class RecommendController: BaseViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.clipsToBounds = true
     }
+    
+    @objc func clickSetting() {
+        let searchController = SearchController()
+        searchController.transitioningDelegate = self
+        self.navigationController?.present(searchController, animated: true, completion: nil)
+    }
+}
+
+extension RecommendController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        let transitionAnimator = BubbleTransition()
+        transitionAnimator.bubbleColor = .red
+        let searchItemFrame = self.navigationItem.rightBarButtonItem?.customView!.convert(self.navigationItem.rightBarButtonItem?.customView?.center ?? .zero, to: self.view) ?? .zero
+
+        transitionAnimator.startingPoint = searchItemFrame
+        return transitionAnimator
+    }
 }
 
 // MARK: Setup UI
@@ -39,14 +57,13 @@ extension RecommendController {
     }
     
     private func setupUI() {
+        setupNavigationBar()
         setupCollectionView()
     }
     
     private func bindingSubviewsLayout() {
         collectionView!.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
-            make.top.equalTo(topLayoutGuide.snp.bottom)
-            make.bottom.equalTo(bottomLayoutGuide.snp.top)
             if #available(iOS 11.0, *) {
                 make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
                 make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom)
@@ -57,10 +74,18 @@ extension RecommendController {
         }
     }
     
+    private func setupNavigationBar() {
+        let settingItem = UIButton.init(type: .custom)
+        settingItem.frame = CGRect.init(x: 0, y: 0, width: 40, height: 40)
+        settingItem.setImage(#imageLiteral(resourceName: "search"), for: .normal)
+        settingItem.addTarget(self, action: #selector(clickSetting), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(customView: settingItem)
+    }
+    
     private func setupCollectionView() {
         let layout = SpringCollectionViewFlowLayout()
         layout.minimumLineSpacing = 0
-        layout.itemSize = CGSize(width: screenW, height: 255)
+        layout.itemSize = CGSize(width: screenW, height: 265)
         if #available(iOS 11.0, *) {
             layout.sectionInsetReference = .fromSafeArea
         } else {
@@ -116,6 +141,6 @@ extension RecommendController: UICollectionViewDelegate,UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.width - collectionView.frame.width.truncatingRemainder(dividingBy: 2)
-        return CGSize(width: cellWidth, height: 255)
+        return CGSize(width: cellWidth, height: 265)
     }
 }

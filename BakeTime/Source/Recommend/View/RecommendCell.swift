@@ -16,12 +16,13 @@ class RecommendCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         let images = [#imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "Macaron"), #imageLiteral(resourceName: "cake"), #imageLiteral(resourceName: "Donut"), #imageLiteral(resourceName: "cookie"), #imageLiteral(resourceName: "Macaron")]
+        contentView.backgroundColor = .white
         coverImage.image = images[randomCustom(min: 0, max: 5)]
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        coverBgView.addShadow(opacity: 0.2, radius: 3, offset: CGSize.init(width: 0, height: 0))
+        coverBgView.addShadow(opacity: 0.1, radius: 5, offset: CGSize.init(width: 0, height: 0))
     }
     
     func randomCustom(min: Int, max: Int) -> Int {
