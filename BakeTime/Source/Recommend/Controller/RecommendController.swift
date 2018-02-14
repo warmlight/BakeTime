@@ -40,7 +40,8 @@ extension RecommendController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let transitionAnimator = BubbleTransition()
         transitionAnimator.bubbleColor = .red
-        let searchItemFrame = self.navigationItem.rightBarButtonItem?.customView!.convert(self.navigationItem.rightBarButtonItem?.customView?.center ?? .zero, to: self.view) ?? .zero
+        let button = self.navigationItem.rightBarButtonItem?.value(forKey: "view") as? UIButton
+        let searchItemFrame = button?.superview?.convert(button?.center ?? .zero, to: UIApplication.shared.keyWindow) ?? .zero
 
         transitionAnimator.startingPoint = searchItemFrame
         return transitionAnimator
