@@ -10,11 +10,13 @@ import UIKit
 
 class BriefCell: UICollectionViewCell {
 
+    @IBOutlet weak var textFieldConstraint: NSLayoutConstraint!
     @IBOutlet weak var briefLabel: UILabel!
     @IBOutlet weak var widthConstraints: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.translatesAutoresizingMaskIntoConstraints = false
         widthConstraints.constant = screenW
+        textFieldConstraint.constant = screenW - 40
     }
 }

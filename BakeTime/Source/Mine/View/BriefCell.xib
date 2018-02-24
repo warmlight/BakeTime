@@ -23,7 +23,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="389" height="120"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R23-vc-Uxu">
-                                <rect key="frame" x="10" y="35.5" width="369" height="59"/>
+                                <rect key="frame" x="-283" y="35.5" width="955" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="955" id="x7w-dF-NzO"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="对于这两个参数除了直接修改tableview对应的属性之外仍然支持使用对应的代理方法设置。最后只要在UITableViewCell中设置contentView的约束即可">
                                         <attributes>
@@ -53,13 +56,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="494-vP-tbP" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" id="1MC-1c-nvj"/>
-                            <constraint firstAttribute="width" priority="750" constant="394" id="1lL-v1-gfr"/>
-                            <constraint firstItem="R23-vc-Uxu" firstAttribute="leading" secondItem="j1O-qh-M4i" secondAttribute="leading" constant="10" id="8Ib-M0-SPs"/>
+                            <constraint firstAttribute="width" priority="250" constant="394" id="1lL-v1-gfr"/>
                             <constraint firstItem="R23-vc-Uxu" firstAttribute="top" secondItem="y9l-KP-78B" secondAttribute="bottom" constant="15" id="Ae4-wK-VnY"/>
                             <constraint firstItem="494-vP-tbP" firstAttribute="top" secondItem="j1O-qh-M4i" secondAttribute="top" id="J68-QF-Qjo"/>
                             <constraint firstItem="y9l-KP-78B" firstAttribute="centerY" secondItem="494-vP-tbP" secondAttribute="centerY" id="PZ5-ya-Qex"/>
+                            <constraint firstItem="R23-vc-Uxu" firstAttribute="centerX" secondItem="j1O-qh-M4i" secondAttribute="centerX" id="Rx9-y4-F0e"/>
                             <constraint firstAttribute="bottom" secondItem="R23-vc-Uxu" secondAttribute="bottom" constant="25" id="aC3-Gm-iPy"/>
-                            <constraint firstAttribute="trailing" secondItem="R23-vc-Uxu" secondAttribute="trailing" constant="10" id="uzB-zC-3lY"/>
                             <constraint firstItem="y9l-KP-78B" firstAttribute="leading" secondItem="494-vP-tbP" secondAttribute="trailing" constant="8" id="yI8-zk-Cjq"/>
                         </constraints>
                     </view>
@@ -75,9 +77,10 @@
             <size key="customSize" width="389" height="120"/>
             <connections>
                 <outlet property="briefLabel" destination="R23-vc-Uxu" id="hwb-36-GVB"/>
+                <outlet property="textFieldConstraint" destination="x7w-dF-NzO" id="Ij8-nW-N6t"/>
                 <outlet property="widthConstraints" destination="1lL-v1-gfr" id="vJX-0c-NnH"/>
             </connections>
-            <point key="canvasLocation" x="203.5" y="100"/>
+            <point key="canvasLocation" x="132.5" y="86"/>
         </collectionViewCell>
     </objects>
 </document>
