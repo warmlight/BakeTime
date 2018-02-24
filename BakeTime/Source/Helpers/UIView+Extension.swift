@@ -167,6 +167,10 @@ extension UIView {
     func presented(_ viewController: UIViewController, animated: Bool, completion: (() -> Void)?) {
         UIViewController.top?.navigationController?.present(viewController, animated: animated, completion: completion)
     }
+    
+    func controller() -> UIViewController? {
+        return UIViewController.top
+    }
 }
 
 extension UIView {

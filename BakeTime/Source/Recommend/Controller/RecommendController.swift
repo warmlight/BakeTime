@@ -30,16 +30,16 @@ class RecommendController: BaseViewController {
     }
     
     @objc func clickSetting() {
-        let searchController = SearchController()
-        searchController.transitioningDelegate = self
-        self.navigationController?.present(searchController, animated: true, completion: nil)
+        let searchMenuController = SearchMenuController()
+        searchMenuController.transitioningDelegate = self
+        self.navigationController?.present(searchMenuController, animated: true, completion: nil)
     }
 }
 
 extension RecommendController: UIViewControllerTransitioningDelegate {
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         let transitionAnimator = BubbleTransition()
-        transitionAnimator.bubbleColor = .red
+        transitionAnimator.bubbleColor = UIConfig.btPink
         let button = self.navigationItem.rightBarButtonItem?.value(forKey: "view") as? UIButton
         let searchItemFrame = button?.superview?.convert(button?.center ?? .zero, to: UIApplication.shared.keyWindow) ?? .zero
 

@@ -49,7 +49,7 @@
 		04375E37202B0126000AFD5F /* ClassListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E35202B0126000AFD5F /* ClassListCell.swift */; };
 		04375E38202B0126000AFD5F /* ClassListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375E36202B0126000AFD5F /* ClassListCell.xib */; };
 		04375E3A202D7094000AFD5F /* ClassListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E39202D7094000AFD5F /* ClassListController.swift */; };
-		04375E3C202D9A02000AFD5F /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E3B202D9A02000AFD5F /* SearchController.swift */; };
+		04375E3C202D9A02000AFD5F /* SearchMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375E3B202D9A02000AFD5F /* SearchMenuController.swift */; };
 		0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E21FCCFABA004E6920 /* Main.storyboard */; };
 		0445F9E61FCCFABA004E6920 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E51FCCFABA004E6920 /* Assets.xcassets */; };
 		0445F9E91FCCFABA004E6920 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0445F9E71FCCFABA004E6920 /* LaunchScreen.storyboard */; };
@@ -60,6 +60,9 @@
 		0445FA191FCD54B8004E6920 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */; };
 		0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */; };
 		0445FA1D1FCD7137004E6920 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */; };
+		044CEBA62041118B00EBD3AE /* SearchBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEBA32041118A00EBD3AE /* SearchBubble.swift */; };
+		044CEBA72041118B00EBD3AE /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEBA42041118A00EBD3AE /* SearchController.swift */; };
+		044CEBA82041118B00EBD3AE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CEBA52041118B00EBD3AE /* SearchBar.swift */; };
 		0453DC662020D3990032514F /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453DC642020D3990032514F /* MenuCell.swift */; };
 		0453DC672020D3990032514F /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453DC652020D3990032514F /* MenuCell.xib */; };
 		045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */; };
@@ -142,7 +145,7 @@
 		04375E35202B0126000AFD5F /* ClassListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListCell.swift; sourceTree = "<group>"; };
 		04375E36202B0126000AFD5F /* ClassListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassListCell.xib; sourceTree = "<group>"; };
 		04375E39202D7094000AFD5F /* ClassListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassListController.swift; sourceTree = "<group>"; };
-		04375E3B202D9A02000AFD5F /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		04375E3B202D9A02000AFD5F /* SearchMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMenuController.swift; sourceTree = "<group>"; };
 		0445F9DB1FCCFABA004E6920 /* BakeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BakeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0445F9E31FCCFABA004E6920 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0445F9E51FCCFABA004E6920 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -162,6 +165,9 @@
 		0445FA181FCD54B8004E6920 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		0445FA1A1FCD6B0F004E6920 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0445FA1C1FCD7137004E6920 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		044CEBA32041118A00EBD3AE /* SearchBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBubble.swift; sourceTree = "<group>"; };
+		044CEBA42041118A00EBD3AE /* SearchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		044CEBA52041118B00EBD3AE /* SearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		0453DC642020D3990032514F /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		0453DC652020D3990032514F /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMenuCell.swift; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 			children = (
 				0410858120107AE4002B2F02 /* PublicMacros.swift */,
 				0410857D20107AE4002B2F02 /* BubbleTransition.swift */,
+				044CEBA22041117C00EBD3AE /* SearchController */,
 				04375E242029B0A3000AFD5F /* TransitionLoadingButton */,
 				0410859720107BF8002B2F02 /* CarouselView */,
 				0410857E20107AE4002B2F02 /* CollectionViewFlowLayout */,
@@ -350,7 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				041C35F82005BF350059CF77 /* RecommendController.swift */,
-				04375E3B202D9A02000AFD5F /* SearchController.swift */,
+				04375E3B202D9A02000AFD5F /* SearchMenuController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -501,6 +508,16 @@
 				041085AB2011FBDF002B2F02 /* UIViewController+Extension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		044CEBA22041117C00EBD3AE /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				044CEBA52041118B00EBD3AE /* SearchBar.swift */,
+				044CEBA32041118A00EBD3AE /* SearchBubble.swift */,
+				044CEBA42041118A00EBD3AE /* SearchController.swift */,
+			);
+			path = SearchController;
 			sourceTree = "<group>";
 		};
 		04D39B902017209100733232 /* Controller */ = {
@@ -819,6 +836,7 @@
 				0410859F20107CC5002B2F02 /* CarouselModel.swift in Sources */,
 				041085A020107CC5002B2F02 /* CarouselView.swift in Sources */,
 				041085A120107CC5002B2F02 /* CarouselEngine.swift in Sources */,
+				044CEBA72041118B00EBD3AE /* SearchController.swift in Sources */,
 				0410858E20107AE4002B2F02 /* PublicMacros.swift in Sources */,
 				041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */,
 				0453DC662020D3990032514F /* MenuCell.swift in Sources */,
@@ -831,6 +849,7 @@
 				0410859620107AE4002B2F02 /* WriteRefreshView.swift in Sources */,
 				04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */,
 				04FA56EE201EF59E0033A770 /* MeController.swift in Sources */,
+				044CEBA82041118B00EBD3AE /* SearchBar.swift in Sources */,
 				04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */,
 				045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */,
 				04375E3A202D7094000AFD5F /* ClassListController.swift in Sources */,
@@ -855,9 +874,10 @@
 				04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
-				04375E3C202D9A02000AFD5F /* SearchController.swift in Sources */,
+				04375E3C202D9A02000AFD5F /* SearchMenuController.swift in Sources */,
 				0410858D20107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift in Sources */,
 				041085AC2011FBDF002B2F02 /* UIViewController+Extension.swift in Sources */,
+				044CEBA62041118B00EBD3AE /* SearchBubble.swift in Sources */,
 				04375E262029B0C8000AFD5F /* LoadingSpinnerLayer.swift in Sources */,
 				04D39B94201720A200733232 /* CollectController.swift in Sources */,
 				041C35FF2005BF7F0059CF77 /* RecommendCell.swift in Sources */,

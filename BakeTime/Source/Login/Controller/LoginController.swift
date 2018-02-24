@@ -130,7 +130,6 @@ extension LoginController {
         view.addSubview(infoBgView)
     }
 
-    
     private func setupBlurView() {
         let blurEffect = UIBlurEffect.init(style: .light)
         visualView = UIVisualEffectView.init(effect: blurEffect)
