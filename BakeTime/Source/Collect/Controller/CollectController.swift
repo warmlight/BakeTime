@@ -38,6 +38,7 @@ class CollectController: BaseViewController {
 extension CollectController {
     
     fileprivate func setup() {
+        view.backgroundColor = .white
         setupUI()
         bindingSubviewsLayout()
     }
@@ -63,7 +64,7 @@ extension CollectController {
         collectionView?.register(UINib(nibName:String(describing: CollectTimeLineRightCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: CollectTimeLineRightCell.self))
         collectionView?.delegate = self;
         collectionView?.dataSource = self;
-        collectionView?.backgroundColor = .black
+        collectionView?.backgroundColor = .white
         
         layout.itemSize = CGSize(width: screenW, height: screenW / 2.2)
         

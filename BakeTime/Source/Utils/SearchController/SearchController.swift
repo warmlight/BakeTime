@@ -64,6 +64,8 @@ extension SearchController: SearchBarDelegate {
     }
     
     func cancelAction() {
+        searchBar.bubble.textField.resignFirstResponder()
+        
         if let d = delegate {
             d.cancelSearch()
             print("dismiss")

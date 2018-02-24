@@ -77,4 +77,9 @@ extension ClassListController: UICollectionViewDelegate,UICollectionViewDataSour
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = collectionView.frame.width - collectionView.frame.width.truncatingRemainder(dividingBy: 2)
+        return CGSize(width: cellWidth, height: 265)
+    }
 }

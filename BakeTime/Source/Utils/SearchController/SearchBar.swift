@@ -43,7 +43,7 @@ class SearchBar: UIView {
 
             self.layoutIfNeeded()
         }) { (_) in
-
+            self.bubble.textField.becomeFirstResponder()
         }
     }
     
@@ -84,7 +84,7 @@ extension SearchBar {
     }
     
     private func setupSearchBubble() {
-        bubble.backgroundColor = .red
+        bubble.backgroundColor = UIColor.init(hex: "F3F3F3")
         bubble.layer.cornerRadius = 20
 
         addSubview(bubble)
@@ -117,6 +117,9 @@ extension SearchBar {
     
     @objc private func clickCleanButton() {
         bubble.textField.text = ""
+        if let d = delegate {
+            d.textDidChange(text: bubble.textField.text ?? "")
+        }
     }
     
     @objc private func textFieldDidChange() {

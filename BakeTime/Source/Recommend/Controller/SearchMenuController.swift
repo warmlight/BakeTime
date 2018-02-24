@@ -8,32 +8,6 @@
 
 import UIKit
 
-//class SearchMenuController: UIViewController {
-//
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        view.backgroundColor = .white
-//    }
-//
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//    }
-//
-//    deinit {
-//        print("dealloc")
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-////    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        super.touchesEnded(touches, with: event)
-//        self.dismiss(animated: true, completion: nil)
-//    }
-//}
-
 class SearchMenuController: UIViewController {
     let cancelButton = UIButton()
     let tableView = UITableView()
@@ -81,7 +55,11 @@ extension SearchMenuController {
     private func bindingSubviewsLayout() {
         searchBar?.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.view)
-            make.top.equalTo(self.view).offset(30)
+            if #available(iOS 11.0, *) {
+                make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(30)
+            } else {
+                make.top.equalTo(self.view).offset(30)
+            }
             make.height.equalTo(40)
         }
         
