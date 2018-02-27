@@ -11,10 +11,11 @@ import UIKit
 class SearchMenuController: UIViewController {
     let cancelButton = UIButton()
     let tableView = UITableView()
-    
     var searchBar: SearchBar?
+    var collectionView: UICollectionView?
     var searchController: SearchController?
-    
+    let tags = ["When you", "eliminate", "the impossiblethe,", "whatever remains,", "however improbable,", "must be", "the truth."]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.edgesForExtendedLayout = UIRectEdge.init(rawValue: 0)
@@ -24,7 +25,10 @@ class SearchMenuController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        searchBar?.starAnimation(delay: 0.8)
+        searchBar?.starAnimation(delay: 0.4, completion: nil)
+        UIView.animate(withDuration: 0.8, delay: 0.4, options: .curveLinear, animations: { 
+            self.collectionView?.alpha = 1
+        }, completion: nil)
     }
     
     @objc private func clickCancelButton() {
@@ -48,11 +52,13 @@ extension SearchMenuController {
     }
     
     private func setupUI() {
+        setupCollectionView()
         setupTableView()
         setupSearchController()
     }
     
     private func bindingSubviewsLayout() {
+        
         searchBar?.snp.makeConstraints { (make) in
             make.left.right.equalTo(self.view)
             if #available(iOS 11.0, *) {
@@ -64,6 +70,13 @@ extension SearchMenuController {
         }
         
         view.layoutIfNeeded()
+        
+        collectionView?.snp.makeConstraints({ (make) in
+            make.left.right.bottom.equalTo(self.view)
+            if let bar = searchBar {
+                make.top.equalTo(bar.snp.bottom).offset(30)
+            }
+        })
     }
     
     private func setupSearchController() {
@@ -80,6 +93,22 @@ extension SearchMenuController {
         tableView.dataSource = self
         
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+    }
+    
+    private func setupCollectionView() {
+        let layout = AlignedCollectionViewFlowLayout()
+        layout.horizontalAlignment = .left
+        layout.estimatedItemSize = .init(width: 100, height: 40)
+        layout.sectionInset = UIEdgeInsets.init(top: 0, left: 15, bottom: 0, right: 15)
+        
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView?.register(UINib(nibName: String(describing: TagCollectionViewCell.self), bundle:nil), forCellWithReuseIdentifier: String(describing: TagCollectionViewCell.self))
+        collectionView?.alpha = 0
+        collectionView?.delegate = self;
+        collectionView?.dataSource = self;
+        collectionView?.backgroundColor = .white
+        
+        self.view.addSubview(collectionView!)
     }
 }
 
@@ -106,5 +135,22 @@ extension SearchMenuController: UITableViewDataSource {
 extension SearchMenuController: SearchControllerDelegate {
     func cancelSearch() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension SearchMenuController: UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return tags.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: TagCollectionViewCell.self), for: indexPath) as! TagCollectionViewCell
+        cell.tagLabel.text = tags[indexPath.row]
+        return cell
     }
 }

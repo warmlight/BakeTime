@@ -8,15 +8,16 @@
 
 import UIKit
 open class BubbleTransition: NSObject {
-    open var startingPoint = CGPoint.zero {
+    var startingPoint = CGPoint.zero {
         didSet {
             bubble.center = startingPoint
         }
     }
-    open var duration = 0.5
-    open var transitionMode: BubbleTransitionMode = .present
-    open var bubbleColor: UIColor = .white
-    open fileprivate(set) var bubble = UIView()
+    var duration = 0.3
+    var transitionMode: BubbleTransitionMode = .present
+    var bubbleColor: UIColor = .white
+    fileprivate(set) var bubble = UIView()
+    fileprivate let alphaDuration = 0.25
     @objc public enum BubbleTransitionMode: Int {
         case present, dismiss, pop
     }
@@ -24,7 +25,7 @@ open class BubbleTransition: NSObject {
 
 extension BubbleTransition: UIViewControllerAnimatedTransitioning {
     public func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return duration + 0.5
+        return duration + alphaDuration
     }
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
@@ -59,7 +60,7 @@ extension BubbleTransition: UIViewControllerAnimatedTransitioning {
             }, completion: { (_) in
                 presentedControllerView.alpha = 1
 
-                UIView.animate(withDuration: 0.5, animations: {
+                UIView.animate(withDuration: self.alphaDuration, animations: {
                     self.bubble.alpha = 0
                 }, completion: { (finish) in
                     self.bubble.isHidden = true

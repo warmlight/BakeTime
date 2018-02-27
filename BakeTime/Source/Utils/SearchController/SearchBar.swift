@@ -32,7 +32,7 @@ class SearchBar: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func starAnimation(delay: Double) {
+    func starAnimation(delay: Double, completion: (() -> Void)?) {
         UIView.animate(withDuration: 0.8, delay: delay, usingSpringWithDamping: 0.85, initialSpringVelocity: 0, options: .curveEaseIn, animations: {
             self.bubble.snp.updateConstraints({ (make) in
                 make.left.equalTo(self).offset(30)
@@ -44,6 +44,9 @@ class SearchBar: UIView {
             self.layoutIfNeeded()
         }) { (_) in
             self.bubble.textField.becomeFirstResponder()
+            if let finish = completion {
+                finish()
+            }
         }
     }
     

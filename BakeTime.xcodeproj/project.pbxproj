@@ -83,6 +83,9 @@
 		04DBAB9E1FD647370083B9FF /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9D1FD647370083B9FF /* UIImage+Extension.swift */; };
 		04DBABA01FD668B60083B9FF /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBAB9F1FD668B60083B9FF /* UIConfig.swift */; };
 		04DBABA21FD6A98C0083B9FF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */; };
+		04F11A30204545BC009DBDC4 /* AlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F11A2F204545BC009DBDC4 /* AlignedCollectionViewFlowLayout.swift */; };
+		04F11A3320454680009DBDC4 /* TagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F11A3120454680009DBDC4 /* TagCollectionViewCell.swift */; };
+		04F11A3420454680009DBDC4 /* TagCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F11A3220454680009DBDC4 /* TagCollectionViewCell.xib */; };
 		04FA56EE201EF59E0033A770 /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA56EC201EF59E0033A770 /* MeController.swift */; };
 		04FA56F1201EF6360033A770 /* BasicInformationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FA56EF201EF6360033A770 /* BasicInformationCell.swift */; };
 		04FA56F2201EF6360033A770 /* BasicInformationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04FA56F0201EF6360033A770 /* BasicInformationCell.xib */; };
@@ -190,6 +193,9 @@
 		04DBABA11FD6A98C0083B9FF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		04E734A81FD544BB00073253 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
 		04E734AD1FD544BB00073253 /* WRNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		04F11A2F204545BC009DBDC4 /* AlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		04F11A3120454680009DBDC4 /* TagCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagCollectionViewCell.swift; sourceTree = "<group>"; };
+		04F11A3220454680009DBDC4 /* TagCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TagCollectionViewCell.xib; sourceTree = "<group>"; };
 		04FA56EC201EF59E0033A770 /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		04FA56EF201EF6360033A770 /* BasicInformationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicInformationCell.swift; sourceTree = "<group>"; };
 		04FA56F0201EF6360033A770 /* BasicInformationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicInformationCell.xib; sourceTree = "<group>"; };
@@ -241,6 +247,7 @@
 		0410857E20107AE4002B2F02 /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				04F11A2F204545BC009DBDC4 /* AlignedCollectionViewFlowLayout.swift */,
 				04B85D1B2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift */,
 				0410857F20107AE4002B2F02 /* CoverCollectionViewLayout.swift */,
 				0410858020107AE4002B2F02 /* SpringCollectionViewFlowLayout.swift */,
@@ -346,6 +353,8 @@
 		041C35F62005BF350059CF77 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04F11A3120454680009DBDC4 /* TagCollectionViewCell.swift */,
+				04F11A3220454680009DBDC4 /* TagCollectionViewCell.xib */,
 				041C35FD2005BF7F0059CF77 /* RecommendCell.swift */,
 				041C35FE2005BF7F0059CF77 /* RecommendCell.xib */,
 				041085A72011F01A002B2F02 /* RecommendBannerCell.swift */,
@@ -750,6 +759,7 @@
 				046DC775201F0BC0002F7EA6 /* BriefCell.xib in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
 				04375E2E202AA03F000AFD5F /* OtherLoginWayView.xib in Resources */,
+				04F11A3420454680009DBDC4 /* TagCollectionViewCell.xib in Resources */,
 				045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */,
 				0410859E20107C6F002B2F02 /* CarsouelCell.xib in Resources */,
 			);
@@ -840,6 +850,7 @@
 				0410858E20107AE4002B2F02 /* PublicMacros.swift in Sources */,
 				041C35E82005AABA0059CF77 /* WRCustomNavigationBar.swift in Sources */,
 				0453DC662020D3990032514F /* MenuCell.swift in Sources */,
+				04F11A30204545BC009DBDC4 /* AlignedCollectionViewFlowLayout.swift in Sources */,
 				041C35E92005AABA0059CF77 /* WRNavigationBar.swift in Sources */,
 				04D39B9B201720F100733232 /* CollectTimeLineRightCell.swift in Sources */,
 				041C35DE2002795B0059CF77 /* Dictionary+Extension.swift in Sources */,
@@ -872,6 +883,7 @@
 				04375E34202ADC39000AFD5F /* LoginInfoBgView.swift in Sources */,
 				041085A320107E7D002B2F02 /* StickyPageControl.swift in Sources */,
 				04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */,
+				04F11A3320454680009DBDC4 /* TagCollectionViewCell.swift in Sources */,
 				0410859D20107C6F002B2F02 /* CarsouelCell.swift in Sources */,
 				04DBAB991FD63A1A0083B9FF /* IconFont.swift in Sources */,
 				04375E3C202D9A02000AFD5F /* SearchMenuController.swift in Sources */,

@@ -9,7 +9,6 @@
 import UIKit
 
 class SearchBubble: UIView {
-    private let bubbleView = UIView()
     let textField = UITextField()
     let cleanButton = UIButton.init(type: .custom)
     
