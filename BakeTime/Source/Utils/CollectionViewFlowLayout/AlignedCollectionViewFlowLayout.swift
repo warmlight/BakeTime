@@ -31,7 +31,7 @@ class AlignedCollectionViewFlowLayout: UICollectionViewFlowLayout {
     var horizontalAlignment: HorizontalAlignment = .justified
     var verticalAlignment: VerticalAlignment = .center
 
-    var contentWidth: CGFloat {
+    private var contentWidth: CGFloat {
         guard let collectionViewWidth = collectionView?.frame.width else {
             return 0
         }
@@ -160,7 +160,7 @@ fileprivate extension UICollectionViewLayoutAttributes {
         return IndexPath(item: currentItem + 1, section: currentSection)
     }
     
-    func alignFirstItemInLine(to alignmentAxis: AlignmentAxis<HorizontalAlignment>) {
+    private func alignFirstItemInLine(to alignmentAxis: AlignmentAxis<HorizontalAlignment>) {
         switch alignmentAxis.alignment {
         case .left:
             frame.origin.x = alignmentAxis.position
@@ -171,21 +171,21 @@ fileprivate extension UICollectionViewLayoutAttributes {
         }
     }
     
-    func alignToPreItem(collectionViewLayout: AlignedCollectionViewFlowLayout) {
+    private func alignToPreItem(collectionViewLayout: AlignedCollectionViewFlowLayout) {
         let itemSpacing = collectionViewLayout.minimumInteritemSpacing //水平间距
         if let preItemAttributes = collectionViewLayout.layoutAttributesForItem(at: precedingIndexPath) {
             frame.origin.x = preItemAttributes.frame.maxX + itemSpacing
         }
     }
     
-    func alignToFollowItem(collectionViewLayout: AlignedCollectionViewFlowLayout) {
+    private func alignToFollowItem(collectionViewLayout: AlignedCollectionViewFlowLayout) {
         let itemSpacing = collectionViewLayout.minimumInteritemSpacing //水平间距
         if let followItem = collectionViewLayout.layoutAttributesForItem(at: followingIndexPath) {
             frame.origin.x = followItem.frame.minX - frame.width - itemSpacing
         }
     }
     
-    func alignVertical(to alignmentAxis: AlignmentAxis<VerticalAlignment>) {
+    private func alignVertical(to alignmentAxis: AlignmentAxis<VerticalAlignment>) {
         switch alignmentAxis.alignment {
         case .top:
             frame.origin.y = alignmentAxis.position
@@ -196,7 +196,7 @@ fileprivate extension UICollectionViewLayoutAttributes {
         }
     }
     
-    func isRepresentingFirstItemInLine(collectionViewLayout: AlignedCollectionViewFlowLayout) -> Bool {
+   private func isRepresentingFirstItemInLine(collectionViewLayout: AlignedCollectionViewFlowLayout) -> Bool {
         if currentItem == 0 {
             return true
         } else {
@@ -208,7 +208,7 @@ fileprivate extension UICollectionViewLayoutAttributes {
         }
     }
     
-    func isRepresentingLastItemInLine(collectionViewLayout: AlignedCollectionViewFlowLayout) -> Bool {
+    private func isRepresentingLastItemInLine(collectionViewLayout: AlignedCollectionViewFlowLayout) -> Bool {
         guard let itemCount = collectionViewLayout.collectionView?.numberOfItems(inSection: currentSection) else {
             return false
         }

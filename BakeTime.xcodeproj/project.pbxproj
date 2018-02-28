@@ -67,6 +67,8 @@
 		0453DC672020D3990032514F /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0453DC652020D3990032514F /* MenuCell.xib */; };
 		045EF04B201F838F0093A5B8 /* PersonalMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */; };
 		045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */; };
+		0468661A20469FB20078D947 /* HasMorePrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468661920469FB20078D947 /* HasMorePrompt.swift */; };
+		0468661C20469FD00078D947 /* HasMorePrompt.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0468661B20469FD00078D947 /* HasMorePrompt.xib */; };
 		04696DEC2015CF4E00BC9934 /* ClassCoverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */; };
 		04696DED2015CF4E00BC9934 /* ClassCoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */; };
 		046DC774201F0BC0002F7EA6 /* BriefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046DC772201F0BC0002F7EA6 /* BriefCell.swift */; };
@@ -175,6 +177,8 @@
 		0453DC652020D3990032514F /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		045EF049201F838F0093A5B8 /* PersonalMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalMenuCell.swift; sourceTree = "<group>"; };
 		045EF04A201F838F0093A5B8 /* PersonalMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalMenuCell.xib; sourceTree = "<group>"; };
+		0468661920469FB20078D947 /* HasMorePrompt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasMorePrompt.swift; sourceTree = "<group>"; };
+		0468661B20469FD00078D947 /* HasMorePrompt.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HasMorePrompt.xib; sourceTree = "<group>"; };
 		04696DEA2015CF4E00BC9934 /* ClassCoverCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassCoverCell.swift; sourceTree = "<group>"; };
 		04696DEB2015CF4E00BC9934 /* ClassCoverCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassCoverCell.xib; sourceTree = "<group>"; };
 		046DC772201F0BC0002F7EA6 /* BriefCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BriefCell.swift; sourceTree = "<group>"; };
@@ -597,6 +601,8 @@
 				04375E0B2021B246000AFD5F /* OpusItemCell.xib */,
 				0453DC642020D3990032514F /* MenuCell.swift */,
 				0453DC652020D3990032514F /* MenuCell.xib */,
+				0468661920469FB20078D947 /* HasMorePrompt.swift */,
+				0468661B20469FD00078D947 /* HasMorePrompt.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -758,6 +764,7 @@
 				04375E38202B0126000AFD5F /* ClassListCell.xib in Resources */,
 				046DC775201F0BC0002F7EA6 /* BriefCell.xib in Resources */,
 				0445F9E41FCCFABA004E6920 /* Main.storyboard in Resources */,
+				0468661C20469FD00078D947 /* HasMorePrompt.xib in Resources */,
 				04375E2E202AA03F000AFD5F /* OtherLoginWayView.xib in Resources */,
 				04F11A3420454680009DBDC4 /* TagCollectionViewCell.xib in Resources */,
 				045EF04C201F838F0093A5B8 /* PersonalMenuCell.xib in Resources */,
@@ -872,6 +879,7 @@
 				0410859120107AE4002B2F02 /* PullToRefresh.swift in Sources */,
 				0410859020107AE4002B2F02 /* DefaultViewAnimator.swift in Sources */,
 				0410858C20107AE4002B2F02 /* CoverCollectionViewLayout.swift in Sources */,
+				0468661A20469FB20078D947 /* HasMorePrompt.swift in Sources */,
 				04375E37202B0126000AFD5F /* ClassListCell.swift in Sources */,
 				0445FA1B1FCD6B0F004E6920 /* BaseViewController.swift in Sources */,
 				04B85D1C2018EF6D006229DF /* CenteredCollectionViewFlowLayout.swift in Sources */,
